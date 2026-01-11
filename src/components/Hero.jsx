@@ -57,7 +57,7 @@ const Hero = () => {
         {/* RIGHT IMAGE */}
         <div className="flex-1 flex justify-center">
           <div className="rounded-xl relative">
-                       <img src={StarFramer} alt="" className="absolute -right-4 -top-7 z-10" />
+                       <img src="/assets/starframers.svg" alt="" className="absolute -right-4 -top-7 z-10" />
 
             <img
                 src={HeroImg}
