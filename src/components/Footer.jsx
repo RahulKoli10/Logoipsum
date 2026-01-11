@@ -1,4 +1,4 @@
-import Frame2 from "../assets/frame2.png";
+import Frame2 from "../assets/frame.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

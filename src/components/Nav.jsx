@@ -1,4 +1,4 @@
-import Frame2 from "../assets/Frame2.png"; 
+import Frame2 from "../assets/Frame.png"; 
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 const Navbar = ({ onOpenQuery }) => {

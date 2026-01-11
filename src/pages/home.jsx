@@ -5,7 +5,7 @@ import Navbar from "../components/Nav.jsx";
 import QueryModal from "../components/QueryModal.jsx";
 import Hero from "../components/Hero.jsx";
 import Footer from "../components/Footer.jsx";
-import Secondimage from "../assets/SecondimgHero.png";
+import Secondimg from "../assets/SecondimgHero.png";
 import "../index.css";
 import Expert from "../assets/expert.svg";
 import mywork1 from "../assets/mywork1.png";
@@ -232,7 +232,7 @@ function Home() {
             {/* Blob Background */}
             <div className="p-10">
               <img
-                src={Secondimage}
+                src={Secondimg}
                 alt="Nitish Kumar"
                 className="w-[400px] md:w-[500px] object-cover"
               />
@@ -533,7 +533,7 @@ function Home() {
             <div className="flex justify-center">
               <div className="p-10">
                 <img
-                  src={Secondimage}
+                  src={Secondimg}
                   alt="Guide"
                   className="w-[260px] md:w-[700px] rounded-2xl object-cover  -scale-x-100"
                 />
