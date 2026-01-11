@@ -6,13 +6,7 @@ import QueryModal from "../components/QueryModal.jsx";
 import Hero from "../components/Hero.jsx";
 import Footer from "../components/Footer.jsx";
 import "../index.css";
-import Expert from "../assets/expert.svg";
-import mywork1 from "../assets/mywork1.png";
-import mywork2 from "../assets/mywork2.png";
-import mywork3 from "../assets/mywork3.png";
-import mywork4 from "../assets/mywork4.png";
 // import WorkDetail from "./workdetails.jsx";
-import reviewer from "../assets/review.svg";
 
 function Home() {
   const [openQuery, setOpenQuery] = useState(false);
@@ -326,7 +320,7 @@ function Home() {
                   className="min-w-[320px] bg-[#F4F6FF] rounded-xl p-6 border-b-5 border-blue-600  "
                 >
                   <img
-                    src={Expert}
+                    src="/assets/expert.svg"
                     alt=""
                     className="mb-2 w-[30px] md:w-[30px]"
                   />
@@ -364,25 +358,25 @@ function Home() {
             {[
               {
                 title: "Development",
-                image: mywork4,
+                image: "/assets/mywork4.png",
                 link: "/workdetails",
                 hoverText: "MetaView 3D ",
               },
               {
                 title: "Development",
-                image: mywork3,
+                image: "/assets/mywork3.png",
                 link: "/workdetails",
                 hoverText: "RoomScan 3D",
               },
               {
                 title: "Digital Transformation",
-                image: mywork2,
+                image: "/assets/mywork2.png",
                 link: "/workdetails",
                 hoverText: "FrameMotion",
               },
               {
                 title: "Business Strategy",
-                image: mywork1,
+                image: "/assets/mywork1.png",
                 link: "/workdetails",
                 hoverText: "StreamBoard",
               },
@@ -570,7 +564,7 @@ function Home() {
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full bg-pink-500 overflow-hidden">
                     <img
-                      src={reviewer}
+                      src="/assets/review.svg"
                       className="w-full h-full object-cover"
                     />
                   </div>

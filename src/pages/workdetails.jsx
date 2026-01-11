@@ -4,17 +4,7 @@ import Navbar from "../components/Nav.jsx";
 import { Icon } from "@iconify/react";
 import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
-import mywork1 from "../assets/mywork1.png";
-import mywork2 from "../assets/mywork2.png";
-import mywork3 from "../assets/mywork3.png";
-import mywork4 from "../assets/mywork4.png";
-import overview1 from "../assets/overview1.png";
-import overview2 from "../assets/overview2.png";
-import overview3 from "../assets/overview3.png";
-import overview4 from "../assets/overview4.png";
-import overview5 from "../assets/overview5.png";
-import overview6 from "../assets/overview6.png";
-import ArrowhiteWhright from "../assets/arrow-right.svg";
+
 const WorkDetail = () => {
   const [openQuery, setOpenQuery] = useState(false);
   return (
@@ -51,7 +41,7 @@ const WorkDetail = () => {
       {/*  HERO IMAGE  */}
       <section className="w-full">
         <img
-          src={overview1}
+          src="/assets/overview1.png"
           alt="Project Hero"
           className="w-full object-cover"
         />
@@ -61,7 +51,7 @@ const WorkDetail = () => {
       <section className="mx-15 px-6 py-5 grid md:grid-cols-2 gap-10">
         <div>
           <img
-            src={overview2}
+            src="/assets/overview2.png"
             alt="Overview"
             className="rounded w-[550px] h-auto"
           />
@@ -100,14 +90,14 @@ const WorkDetail = () => {
           </p>
         </div>
         <div>
-          <img src={overview3} alt="Problem" className="rounded" />
+          <img src="/assets/overview3.png" alt="Problem" className="rounded" />
         </div>
       </section>
 
       {/*  PROJECT GOALS   */}
       <section className="mx-15 px-6 py-5 grid md:grid-cols-2 gap-20">
         <div>
-          <img src={overview4} alt="Goals" className="rounded" />
+          <img src="/assets/overview4.png" alt="Goals" className="rounded" />
         </div>
         <div>
           <h3 className="text-3xl font-semibold mb-5">Project Goals</h3>
@@ -158,14 +148,14 @@ const WorkDetail = () => {
           </ul>
         </div>
         <div>
-          <img src={overview5} alt="Challenges" className="rounded" />
+          <img src="/assets/overview5.png" alt="Challenges" className="rounded" />
         </div>
       </section>
 
        {/* OUTCOME & RESULTS   */}
       <section className="mx-15 px-6 py-5 grid md:grid-cols-2 gap-20">
         <div>
-          <img src={overview6} alt="Results" className="rounded" />
+          <img src="/assets/overview6.png" alt="Results" className="rounded" />
         </div>
 
         <div className="flex justify-end flex-col">
@@ -198,25 +188,25 @@ const WorkDetail = () => {
             {[
               {
                 title: "Development",
-                image: mywork4,
+                image: "/assets/mywork4.png",
                 link: "/workdetails",
                 hoverText: "MetaView 3D ",
               },
               {
                 title: "Development",
-                image: mywork3,
+                image: "/assets/mywork3.png",
                 link: "/workdetails",
                 hoverText: "RoomScan 3D",
               },
               {
                 title: "Digital Transformation",
-                image: mywork2,
+                image: "/assets/mywork2.png",
                 link: "/workdetails",
                 hoverText: "FrameMotion",
               },
               {
                 title: "Business Strategy",
-                image: mywork1,
+                image: "/assets/mywork1.png",
                 link: "/workdetails",
                 hoverText: "StreamBoard",
               },
@@ -241,7 +231,7 @@ const WorkDetail = () => {
                     <span className="flex items-center gap-3 text-white text-4xl ">
                       {item.hoverText}
                       <img
-                        src={ArrowhiteWhright}
+                        src="/assets/arrow-right.svg"
                         alt="arrow"
                         className="w-6 h-6 filter invert brightness-200 rotate-315"
                       />

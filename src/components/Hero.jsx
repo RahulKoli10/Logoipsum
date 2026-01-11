@@ -1,7 +1,7 @@
 // import HeroImg from "../assets/hero.png";
 // import Twitter from "../assets/twitter.svg";
 import { Icon } from "@iconify/react";
-import HeroImg from "../assets/heroImg.svg";
+// import HeroImg from "../assets/heroImg.svg";
 import { Link } from "react-router-dom";
 // import LinkedIn from "../assets/linkedin.svg";
 // import GitHub from "../assets/github.svg";
@@ -60,7 +60,7 @@ const Hero = () => {
                        <img src="/assets/starframers.svg" alt="" className="absolute -right-4 -top-7 z-10" />
 
             <img
-                src={HeroImg}
+                src="/assets/heroImg.svg"
                 alt="CEO"
                 className="w-[260px] md:w-[500px] rounded-xl object-cover"
               />
