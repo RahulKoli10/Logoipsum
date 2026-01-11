@@ -4,7 +4,7 @@ import Home from "./pages/home.jsx";
 import WorkDetail from "./pages/workdetails.jsx";
 import Work from "./pages/work.jsx"; 
 import Contact from "./pages/contact.jsx";
-import ScreenTop from "./components/screenTop.jsx";
+import ScreenTop from "./components/ScreenTop.jsx";
 
 function App() {
   return (
