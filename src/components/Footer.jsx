@@ -1,4 +1,4 @@
-import Frame2 from "../assets/frame.png";
+import frame2 from "../assets/frame.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <h2 className="text-black text-lg font-semibold mb-3">
-            <img src={Frame2} alt="" className="h-8" />
+            <img src={frame2} alt="" className="h-8" />
           </h2>
           <p className="text-sm text-gray-800">
             lum ipsum dolor sit amet, consectetur adipiscing elit, sed do

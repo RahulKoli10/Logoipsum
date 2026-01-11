@@ -5,7 +5,7 @@ import Navbar from "../components/Nav.jsx";
 import QueryModal from "../components/QueryModal.jsx";
 import Hero from "../components/Hero.jsx";
 import Footer from "../components/Footer.jsx";
-import Secondimg from "../assets/SecondimgHero.png";
+import Secondimg from "../assets/secondimgHero.png";
 import "../index.css";
 import Expert from "../assets/expert.svg";
 import mywork1 from "../assets/mywork1.png";
