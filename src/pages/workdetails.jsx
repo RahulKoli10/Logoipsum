@@ -1,0 +1,269 @@
+import { useState } from "react";
+import QueryModal from "../components/QueryModal.jsx";
+import Navbar from "../components/Nav.jsx";
+import { Icon } from "@iconify/react";
+import Footer from "../components/Footer.jsx";
+import { Link } from "react-router-dom";
+import mywork1 from "../assets/mywork1.png";
+import mywork2 from "../assets/mywork2.png";
+import mywork3 from "../assets/mywork3.png";
+import mywork4 from "../assets/mywork4.png";
+import overview1 from "../assets/overview1.png";
+import overview2 from "../assets/overview2.png";
+import overview3 from "../assets/overview3.png";
+import overview4 from "../assets/overview4.png";
+import overview5 from "../assets/overview5.png";
+import overview6 from "../assets/overview6.png";
+import ArrowhiteWhright from "../assets/arrow-right.svg";
+const WorkDetail = () => {
+  const [openQuery, setOpenQuery] = useState(false);
+  return (
+    <main className="bg-white text-lg text-black">
+      <Navbar onOpenQuery={() => setOpenQuery(true)} />
+
+      {openQuery && <QueryModal onClose={() => setOpenQuery(false)} />}
+
+      {/*  HERO  */}
+      <section className="mx-auto px-6 pt-10 pb-16">
+        <Link to="/">
+          <p>Back</p>{" "}
+        </Link>
+        <div className="flex flex-col md:flex-row md:items-center gap-6 mt-10 ml-10">
+          <div>
+            <h1 className="text-5xl font-bold mb-3">VexLogic AI Assistant</h1>
+
+            <div className="flex md:flex-row gap-4 text-sm text-gray-500">
+              <span>Role: UI/UX Designer</span>
+              <span className="flex items-center gap-1">
+                <Icon icon="iconamoon:clock-thin" width="20" height="20" />
+                <span>Timeline: 3hr</span>
+              </span>
+            </div>
+          </div>
+
+          <p className="max-w-md mr-20 md:ml-auto">
+            Designing a minimal, intelligent interface for seamless human–AI
+            interaction.
+          </p>
+        </div>
+      </section>
+
+      {/*  HERO IMAGE  */}
+      <section className="w-full">
+        <img
+          src={overview1}
+          alt="Project Hero"
+          className="w-full object-cover"
+        />
+      </section>
+
+      {/*  PROJECT OVERVIEW  */}
+      <section className="mx-15 px-6 py-5 grid md:grid-cols-2 gap-10">
+        <div>
+          <img
+            src={overview2}
+            alt="Overview"
+            className="rounded w-[550px] h-auto"
+          />
+        </div>
+        <div>
+          <h3 className="text-3xl font-semibold mb-4 ">Project Overview</h3>
+          <p className=" leading-relaxed">
+            VexLogic AI Assistant is a modern conversational platform designed
+            for users who want fast, clean, and distraction-free interactions
+            with AI. My goal was to create a UI that feels intelligent,
+            lightweight, and enjoyable, without overwhelming the user with
+            unnecessary elements. The final design focuses on balance—clarity,
+            speed, comfort, and structure.
+          </p>
+        </div>
+      </section>
+
+      {/*  PROBLEM STATEMENT  */}
+      <section className="mx-15  px-6 py-5 grid md:grid-cols-2 gap-20">
+        <div>
+          <h2 className="text-3xl font-semibold mb-4">Problem Statement</h2>
+          <p className="mb-10">
+            Most AI chat interfaces today feel cluttered, unorganized, or slow.
+            Users often struggle with:
+          </p>
+          <ul className="space-y-3 list-disc pl-5 mb-10 marker:text-3xl">
+            <li>Confusing layout</li>
+            <li>Poor message hierarchy</li>
+            <li>Weak visual guidance</li>
+            <li>Build a consistent and scalable design system.</li>
+            <li>No emotional feel or brand personality</li>
+          </ul>
+          <p>
+            We needed a UX that feels simple but powerful—and a UI that supports
+            continuous, distraction-free conversation
+          </p>
+        </div>
+        <div>
+          <img src={overview3} alt="Problem" className="rounded" />
+        </div>
+      </section>
+
+      {/*  PROJECT GOALS   */}
+      <section className="mx-15 px-6 py-5 grid md:grid-cols-2 gap-20">
+        <div>
+          <img src={overview4} alt="Goals" className="rounded" />
+        </div>
+        <div>
+          <h3 className="text-3xl font-semibold mb-5">Project Goals</h3>
+          <p className="mb-5">
+            Designing a modern, intuitive, and user-centric AI interface focused
+            on clarity, comfort, and seamless interaction.The goal was to create
+            a digital environment that reduces cognitive load, enhances
+            readability, and delivers a smooth conversational experience—while
+            maintaining a premium, professional visual identity.
+          </p>
+          <p className="font-semibold mb-3">Key Point</p>
+          <ul className="space-y-3 list-disc pl-5 mb-10 marker:text-3xl">
+            <li>Create a clean and distraction-free layout.</li>
+            <li>Support both light and dark modes elegantly.</li>
+            <li>Improve message readability and hierarchy.</li>
+            <li>Build a consistent and scalable design system.</li>
+            <li>Add smooth micro-interactions for better usability.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/*   CHALLENGES & SOLUTIONS */}
+      <section className="mx-15 px-6 py-5 grid md:grid-cols-2 gap-20">
+        <div>
+          <h3 className="text-3xl font-semibold my-10">
+            Challenges & Solutions
+          </h3>
+          <p className="mb-5">
+            Throughout the design process, several usability and visual clarity
+            issues emerged. The goal was to overcome these challenges with
+            simple, thoughtful design decisions that improved readability,
+            reduced friction, and created a more polished user experience.
+          </p>
+          <p className="font-semibold mb-3">Key Point</p>
+          <ul className="space-y-3 list-disc pl-5 mb-10 marker:text-3xl">
+            <li>
+              <span className="font-semibold">Generic visual style</span>:
+              Introduced a unique spacing system and branded UI elements.
+            </li>
+
+            <li>
+              {" "}
+              <span className="font-semibold">
+                Low readability in long chats
+              </span>
+              : Improved hierarchy, line height, and bubble padding.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src={overview5} alt="Challenges" className="rounded" />
+        </div>
+      </section>
+
+       {/* OUTCOME & RESULTS   */}
+      <section className="mx-15 px-6 py-5 grid md:grid-cols-2 gap-20">
+        <div>
+          <img src={overview6} alt="Results" className="rounded" />
+        </div>
+
+        <div className="flex justify-end flex-col">
+          <h3 className="text-3xl font-semibold mb-10">Outcome & Results</h3>
+
+          <p className="leading-relaxed">
+            The final design delivered a more focused, intuitive, and visually
+            balanced experience. Through refined spacing, improved hierarchy,
+            and thoughtful interaction patterns, the overall product became
+            smoother, more reliable, and more enjoyable for users—strengthening
+            both usability and brand perception.
+          </p>
+        </div>
+      </section>
+
+      {/*  RELATED WORK  */}
+      <section id="work" className="bg-white">
+        <div className="max-w-auto  px-6 py-20">
+          {/* Heading */}
+          <h2 className="text-3xl font-bold text-center mb-2 text-black">
+            My Works
+          </h2>
+          <p className="text-black text-center mb-12 text-lg">
+            Discover My Latest Work And Strategic Solutions That Shape Business
+            Growth
+          </p>
+
+          {/* Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-lg text-black">
+            {[
+              {
+                title: "Development",
+                image: mywork4,
+                link: "/workdetails",
+                hoverText: "MetaView 3D ",
+              },
+              {
+                title: "Development",
+                image: mywork3,
+                link: "/workdetails",
+                hoverText: "RoomScan 3D",
+              },
+              {
+                title: "Digital Transformation",
+                image: mywork2,
+                link: "/workdetails",
+                hoverText: "FrameMotion",
+              },
+              {
+                title: "Business Strategy",
+                image: mywork1,
+                link: "/workdetails",
+                hoverText: "StreamBoard",
+              },
+            ].map((item, index) => (
+              <div key={index}>
+                {/* Category */}
+                <p className="mb-3 font-medium text-gray-800">{item.title}</p>
+
+                {/* Image Card */}
+                <Link
+                  to={item.link}
+                  className="group relative block max-h-full overflow-hidden rounded-lg"
+                >
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-500"
+                  />
+
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                    <span className="flex items-center gap-3 text-white text-4xl ">
+                      {item.hoverText}
+                      <img
+                        src={ArrowhiteWhright}
+                        alt="arrow"
+                        className="w-6 h-6 filter invert brightness-200 rotate-315"
+                      />
+                    </span>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+          {/* <button className="bg-blue-600 text-white px-6 py-3 flex items-center gap-3 mx-auto mt-10 hover:bg-blue-700 transition">
+            View Projects{" "}
+            <img
+              src={ArrowhiteWhright}
+              alt=""
+              className="invert brightness-200 "
+            />
+          </button> */}
+        </div>
+      </section>
+      <Footer />
+    </main>
+  );
+};
+
+export default WorkDetail;
