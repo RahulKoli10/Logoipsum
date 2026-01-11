@@ -5,8 +5,7 @@ import Navbar from "../components/Nav.jsx";
 import QueryModal from "../components/QueryModal.jsx";
 import Hero from "../components/Hero.jsx";
 import Footer from "../components/Footer.jsx";
-import "../index.css";
-// import WorkDetail from "./workdetails.jsx";
+import "../index.css"; 
 
 function Home() {
   const [openQuery, setOpenQuery] = useState(false);
@@ -599,7 +598,7 @@ function Home() {
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full bg-blue-500 overflow-hidden">
                     <img
-                      src={reviewer}
+                      src="/assets/review.svg"
                       className="w-full h-full object-cover"
                     />
                   </div>

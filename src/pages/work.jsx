@@ -1,9 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import mywork1 from "../assets/mywork1.png";
-import mywork2 from "../assets/mywork2.png";
-import mywork3 from "../assets/mywork3.png";
-import mywork4 from "../assets/mywork4.png";
 import Navbar from "../components/Nav.jsx";
 import Footer from "../components/Footer.jsx";
 import QueryModal from "../components/QueryModal.jsx";
@@ -33,25 +29,25 @@ export default function Work() {
             {[
               {
                 title: "Development",
-                image: mywork4,
+                image: "/assets/mywork4.png",
                 link: "/workdetails",
                 hoverText: "MetaView 3D ",
               },
               {
                 title: "Development",
-                image: mywork3,
+                image: "/assets/mywork3.png",
                 link: "/workdetails",
                 hoverText: "RoomScan 3D",
               },
               {
                 title: "Digital Transformation",
-                image: mywork2,
+                image: "/assets/mywork2.png",
                 link: "/workdetails",
                 hoverText: "FrameMotion",
               },
               {
                 title: "Business Strategy",
-                image: mywork1,
+                image: "/assets/mywork1.png",
                 link: "/workdetails",
                 hoverText: "StreamBoard",
               },

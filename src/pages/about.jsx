@@ -2,11 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { Icon } from "@iconify/react";
 import Navbar from "../components/Nav.jsx";
 import QueryModal from "../components/QueryModal.jsx";
-import Footer from "../components/Footer.jsx";
-import aboout1 from "../assets/aboutsection.png";
-import aboout2 from "../assets/aboutsection2.png";
-import aboout3 from "../assets/aboutsection3.png";
-import aboutBg from "../assets/aboutBg.jpg";
+import Footer from "../components/Footer.jsx"; 
 import { Link } from "react-router-dom";
 const About = () => {
   const arrowRef = useRef(null);
@@ -250,7 +246,7 @@ const About = () => {
 
         <div className="text-center md:pr-4">
           <img
-            src={aboout1}
+            src="/assets/aboutsection.png"
             alt="Nitish Kumar"
             className="rounded-xl mx-auto "
           />
@@ -262,7 +258,7 @@ const About = () => {
       {/* MY JOURNEY */}
       <h3 className="text-3xl font-semibold text-center">My Journey</h3>
       <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-20 items-center">
-        <img src={aboout2} alt="My Journey" className="rounded-xl" />
+        <img src="/assets/aboutsection2.png" alt="My Journey" className="rounded-xl" />
         <div className="text-lg">
           <p className="leading-relaxed mb-4">
             My career began with a simple curiosity: Why do some digital
@@ -339,7 +335,7 @@ const About = () => {
           </p>
         </div>
 
-        <img src={aboout3} alt="My Purpose" className="rounded-xl" />
+        <img src="/assets/aboutsection3.png" alt="My Purpose" className="rounded-xl" />
       </section>
 
       {/* PROVEN IMPACT */}
@@ -370,7 +366,7 @@ const About = () => {
       {/* CTA */}
       <section
         className="relative py-32 bg-cover bg-center flex items-center"
-        style={{ backgroundImage: `url(${aboutBg})` }}
+        style={{ backgroundImage: `url(/assets/aboutBg.jpg)` }}
       >
         {/* Dark overlay (ONLY background) */}
         <div className="absolute inset-0 bg-black/50"></div>
