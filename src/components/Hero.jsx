@@ -5,7 +5,7 @@ import HeroImg from "../assets/heroImg.svg";
 import { Link } from "react-router-dom";
 // import LinkedIn from "../assets/linkedin.svg";
 // import GitHub from "../assets/github.svg";
-import StarFramer from "../assets/Starframers.svg";
+import StarFramer from "../assets/starframers.svg";
 const Hero = () => {
   return (
     <section className="font-dm bg-[#F6F8FF]">
