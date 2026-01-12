@@ -5,11 +5,11 @@
 - [x] Identified PNG images without lazy loading causing slow loads
 
 ## Tasks to Complete
-- [ ] Add lazy loading to all images not already optimized
-- [ ] Optimize images by converting to WebP format for better compression
-- [ ] Implement preloading for critical images
-- [ ] Add responsive image support with srcset
-- [ ] Update Vite config for better asset optimization
+- [x] Add lazy loading to all images not already optimized
+- [x] Optimize images by converting to WebP format for better compression
+- [x] Implement preloading for critical images
+- [x] Add responsive image support with srcset
+- [x] Update Vite config for better asset optimization
 
 ## Files to Edit
 - src/pages/home.jsx

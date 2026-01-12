@@ -223,14 +223,15 @@ function Home() {
 
             {/* Blob Background */}
             <div className="p-10">
-              <img
-                src="/assets/secondImgHero.png"
-                alt="Nitish Kumar"
-                loading="lazy"
-                    className="w-[550px] md:w-[550px] "
-                srcSet="/assets/secondImgHero.png 400w, /assets/secondImgHero.png 500w"
-                sizes="(max-width: 768px) 400px, 500px"
-              />
+               
+                <img
+                  src="/assets/secondImgHero.png"
+                  alt="Nitish Kumar"
+                  loading="lazy"
+                  className="w-[550px] md:w-[550px] "
+                  srcSet="/assets/secondImgHero.png 400w, /assets/secondImgHero.png 500w"
+                  sizes="(max-width: 768px) 400px, 500px"
+                /> 
             </div>
           </div>
 
@@ -575,6 +576,7 @@ function Home() {
                     <img
                       src="/assets/review.svg"
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                   <div>

@@ -19,6 +19,9 @@ export default defineConfig({
         quality: [0.8, 0.9],
         speed: 4,
       },
+      webp: {
+        quality: 80,
+      },
       svgo: {
         plugins: [
           {
