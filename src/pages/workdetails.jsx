@@ -44,6 +44,7 @@ const WorkDetail = () => {
           src="/assets/overview1.png"
           alt="Project Hero"
           className="w-full object-cover"
+          loading="lazy"
         />
       </section>
 
@@ -53,7 +54,10 @@ const WorkDetail = () => {
           <img
             src="/assets/overview2.png"
             alt="Overview"
-            className="rounded w-[550px] h-auto"
+            className="  w-[550px] h-auto"
+            loading="lazy"
+            srcSet="/assets/overview2.png 400w, /assets/overview2.png 600w"
+            sizes="(max-width: 768px) 400px, 600px"
           />
         </div>
         <div>
@@ -89,15 +93,16 @@ const WorkDetail = () => {
             continuous, distraction-free conversation
           </p>
         </div>
-        <div>
-          <img src="/assets/overview3.png" alt="Problem" className="rounded" />
+        <div> 
+            <img src="/assets/overview3.png" alt="Problem" className="" loading="lazy"  srcSet="/assets/overview3.png 400w, /assets/overview3.png 600w"sizes="(max-width: 768px) 400px, 600px" />
+           
         </div>
       </section>
 
       {/*  PROJECT GOALS   */}
       <section className="mx-15 px-6 py-5 grid md:grid-cols-2 gap-20">
         <div>
-          <img src="/assets/overview4.png" alt="Goals" className="rounded" />
+          <img src="/assets/overview4.png" alt="Goals" className=" " loading="lazy" />
         </div>
         <div>
           <h3 className="text-3xl font-semibold mb-5">Project Goals</h3>
@@ -148,14 +153,14 @@ const WorkDetail = () => {
           </ul>
         </div>
         <div>
-          <img src="/assets/overview5.png" alt="Challenges" className="rounded" />
+          <img src="/assets/overview5.png" alt="Challenges" className=" " loading="lazy" srcSet="/assets/overview5.png 400w, /assets/overview5.png 600w" sizes="(max-width: 768px) 400px, 600px" />
         </div>
       </section>
 
        {/* OUTCOME & RESULTS   */}
       <section className="mx-15 px-6 py-5 grid md:grid-cols-2 gap-20">
         <div>
-          <img src="/assets/overview6.png" alt="Results" className="rounded" />
+          <img src="/assets/overview6.png" alt="Results" className=" " loading="lazy" />
         </div>
 
         <div className="flex justify-end flex-col">
@@ -218,12 +223,13 @@ const WorkDetail = () => {
                 {/* Image Card */}
                 <Link
                   to={item.link}
-                  className="group relative block max-h-full overflow-hidden rounded-lg"
+                  className="group relative block max-h-full overflow-hidden  -lg"
                 >
                   <img
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-500"
+                    loading="lazy"
                   />
 
                   {/* Hover Overlay */}

@@ -159,8 +159,8 @@ const About = () => {
       </section>
 
       {/* CEO STORY */}
-      <section className="max-w-7xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-14 items-start">
-        <div className="space-y-6  leading-relaxed md:pr-10">
+      <section className=" mx-auto px-15 py-10 grid md:grid-cols-2 gap-14 items-start">
+        <div className="space-y-6 leading-relaxed md:pr-10 text-[18px]">
           <p>
             As a CEO, I lead at the intersection of technology, innovation, and
             business strategy. With a background in building AI-powered SaaS
@@ -188,7 +188,7 @@ const About = () => {
           </p>
 
           <p className="font-semibold mt-5">My Principles</p>
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-2 text-[16px]">
             <li className="flex items-start gap-3">
               <Icon
                 icon="teenyicons:tick-circle-solid"
@@ -248,18 +248,21 @@ const About = () => {
           <img
             src="/assets/aboutsection.png"
             alt="Nitish Kumar"
-            className="rounded-xl mx-auto "
+            className=" mx-auto w-full h-auto max-w-[600px] "
+            loading="lazy"
+            srcSet="/assets/aboutsection.png 400h, /assets/aboutsection.png 600h"
+            sizes="(max-width: 513px) 400px, 600px"
           />
           <p className="mt-2 font-bold text-black">Nitish Kumar</p>
-          <p className="mt-2 text-sm ">Chief Executive Officer at Novanectar</p>
+          <p className="mt-2   ">Chief Executive Officer at Novanectar</p>
         </div>
       </section>
 
       {/* MY JOURNEY */}
-      <h3 className="text-3xl font-semibold text-center">My Journey</h3>
-      <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-20 items-center">
-        <img src="/assets/aboutsection2.png" alt="My Journey" className="rounded-xl" />
-        <div className="text-lg">
+      <h3 className="text-3xl font-semibold text-center mt-10">My Journey</h3>
+      <section className="mx-auto px-20 py-15 grid md:grid-cols-2 gap-20 items-center">
+        <img src="/assets/aboutsection2.png" alt="My Journey" className=" " loading="lazy" srcSet="/assets/aboutsection2.png 606h, /assets/aboutsection2.png 606h" sizes="(max-width: 513px) 400px, 600px" />
+        <div className="text-lg leading-[1.8]">
           <p className="leading-relaxed mb-4">
             My career began with a simple curiosity: Why do some digital
             experiences feel effortless while others frustrate us? This
@@ -299,17 +302,17 @@ const About = () => {
       </section>
 
       {/* MY PURPOSE */}
-      <h3 className="text-3xl font-semibold text-center">My Purpose</h3>
-      <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-20 items-center">
-        <div className="text-lg">
-          <p className=" not-only:leading-relaxed mb-3">
+      <h3 className="text-3xl font-semibold text-center mt-20">My Purpose</h3>
+      <section className="mx-auto px-20 py-15 grid md:grid-cols-2 gap-20 items-center">
+        <div className="text-lg leading-[1.8]">
+          <p className=" not-only:leading-relaxed mb-5">
             I am driven by a desire to solve real problems. Every project I take
             on is guided by one question: How can we make this experience better
             for the user? My purpose is to remove complexity, create clarity,
             and design digital products that deliver long-term value.
           </p>
 
-          <p className="leading-relaxed mb-3">
+          <p className="leading-relaxed mb-5">
             My leadership approach combines strategic decision-making with a
             deep understanding of modern engineering. From guiding teams in
             developing Retrieval-Augmented Generation (RAG) systems and
@@ -317,7 +320,7 @@ const About = () => {
             type-safe monorepos.
           </p>
 
-          <p className="leading-relaxed mb-3">
+          <p className="leading-relaxed mb-5">
             Ut in risus venenatis leo molestie elementum. Nullam urna metus,
             gravida sed lacus id, volutpat ullamcorper eros. Suspendisse mattis
             gravida quam a dictum. Orci varius natoque penatibus et magnis dis
@@ -326,7 +329,7 @@ const About = () => {
             gravida et aliquam eget, pretium sit amet purus. Vestibulum
             imperdiet a leo eu fringilla.
           </p>
-          <p className="leading-relaxed ">
+          <p className="leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             quis odio fermentum, condimentum purus vitae, congue felis. Duis nec
             efficitur odio, pharetra aliquet lectus. In dapibus, risus vitae
@@ -335,7 +338,7 @@ const About = () => {
           </p>
         </div>
 
-        <img src="/assets/aboutsection3.png" alt="My Purpose" className="rounded-xl" />
+        <img src="/assets/aboutsection3.png" alt="My Purpose" className="h-auto w-full max-w-[538px]" loading="lazy" srcSet="/assets/aboutsection3.png 400w, /assets/aboutsection3.png 600w" sizes="(max-width: 768px) 400px, 600px" />
       </section>
 
       {/* PROVEN IMPACT */}
@@ -365,8 +368,8 @@ const About = () => {
 
       {/* CTA */}
       <section
-        className="relative py-32 bg-cover bg-center flex items-center"
-        style={{ backgroundImage: `url(/assets/aboutBg.jpg)` }}
+        className="relative py-32 bg-cover bg-center flex items-center" 
+        style={{ backgroundImage: `url(/assets/aboutBg.jpg)`, }}
       >
         {/* Dark overlay (ONLY background) */}
         <div className="absolute inset-0 bg-black/50"></div>

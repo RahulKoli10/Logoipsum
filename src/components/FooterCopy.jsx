@@ -22,14 +22,18 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div>
-          <h3 className="text-black font-bold text-lg mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-lg">
-            <li><Link to="/work">Work</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact me</Link></li>
-          </ul>
-        </div>
+        {token && role === "buyer" && (
+          <div>
+            <h3 className="text-black font-bold text-lg mb-3">Quick Links</h3>
+            <ul className="space-y-2 text-lg">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/profile">Profile</Link></li>
+              <li><Link to="/addListing">Add Listing</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact me</Link></li>
+            </ul>
+          </div>
+        )}
 
         {/* Social */}
         <div>
@@ -42,59 +46,59 @@ const Footer = () => {
           </ul>
         </div>
         {/* Seller Links */}
-<div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3">
 
-  {/* NOT LOGGED IN → SHOW BOTH */}
-  {!token && (
-    <>
-      <Link
-        to="/workdetails"
-        className="px-4 py-2 rounded-lg text-center text-sm font-medium
+          {/* NOT LOGGED IN → SHOW BOTH */}
+          {!token && (
+            <>
+              <Link
+                to="/workdetails"
+                className="px-4 py-2 rounded-lg text-center text-sm font-medium
                    bg-blue-600 text-white
                    hover:bg-blue-700 transition-all duration-200"
-      >
-        Become a Seller
-      </Link>
+              >
+                Become a Seller
+              </Link>
 
-      <Link
-        to="/seller/dashboard"
-        className="px-4 py-2 rounded-lg text-center text-sm font-medium
+              <Link
+                to="/seller/dashboard"
+                className="px-4 py-2 rounded-lg text-center text-sm font-medium
                    border border-blue-600 text-blue-600
                    hover:bg-blue-50 transition-all duration-200"
-      >
-       Buyer Login
-      </Link>
-    </>
-  )}
+              >
+                Buyer Login
+              </Link>
+            </>
+          )}
 
-  {/* LOGGED IN BUYER */}
-  {token && role === "buyer" && (
-    <Link
-      to="/workdetails"
-      className="px-4 py-2 rounded-lg text-center text-sm font-semibold
+          {/* LOGGED IN BUYER */}
+          {token && role === "buyer" && (
+            <Link
+              to="/workdetails"
+              className="px-4 py-2 rounded-lg text-center text-sm font-semibold
                  bg-gradient-to-r from-blue-600 to-indigo-600
                  text-white shadow-md
                  hover:shadow-lg hover:scale-[1.02]
                  transition-all duration-200"
-    >
-      Switch to Seller
-    </Link>
-  )}
+            >
+              Switch to Seller
+            </Link>
+          )}
 
-  {/* LOGGED IN SELLER */}
-  {token && role === "seller" && (
-    <Link
-      to="/seller/dashboard"
-      className="px-4 py-2 rounded-lg text-center text-sm font-semibold
+          {/* LOGGED IN SELLER */}
+          {token && role === "seller" && (
+            <Link
+              to="/seller/dashboard"
+              className="px-4 py-2 rounded-lg text-center text-sm font-semibold
                  bg-green-600 text-white shadow-md
                  hover:bg-green-700 hover:shadow-lg
                  transition-all duration-200"
-    >
-      Go to Seller Dashboard
-    </Link>
-  )}
+            >
+              Go to Seller Dashboard
+            </Link>
+          )}
 
-</div>
+        </div>
 
       </div>
 

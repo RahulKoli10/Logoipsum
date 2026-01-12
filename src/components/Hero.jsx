@@ -1,10 +1,8 @@
-// import HeroImg from "../assets/hero.png";
-// import Twitter from "../assets/twitter.svg";
 import { Icon } from "@iconify/react";
-// import HeroImg from "../assets/heroImg.svg";
 import { Link } from "react-router-dom";
-// import LinkedIn from "../assets/linkedin.svg";
-// import GitHub from "../assets/github.svg";
+import linkedinIcon from "../assets/linkedin.png";
+import instagramIcon from "../assets/instagram.png";
+import twitterIcon from "../assets/twitter.png";
 
 const Hero = () => {
   return (
@@ -16,7 +14,7 @@ const Hero = () => {
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
             Co-founder <br />
-            at <span className="text-blue-600">NovaNectar</span>
+            at <span className="text-[#0033FF]">NovaNectar</span>
           </h1>
 
           <p className="mt-4 text-gray-600 max-w-lg text-2xl">
@@ -28,41 +26,54 @@ const Hero = () => {
           <div className="mt-6 flex flex-col gap-6">
             <div>
               <Link to="/contact" >
-                  <button className="bg-blue-600 text-white px-10 py-4 text-lg font-semibold hover:bg-blue-700 transition border-neutral-900">
+                  <button className="bg-[#0033FF] text-white px-10 py-3 text-lg hover:bg-blue-700 transition border-neutral-900 font-medium">
                     Get in Touch
               </button>
               </Link>
             </div>
-            <div className="bg-white  shadow-md rounded-md flex w-fit overflow-hidden">
-              <div className="w-14 h-14 flex items-center justify-center ">
-                <Link className="cursor-pointer" to="https://www.linkedin.com/"><Icon  icon="mdi:linkedin" width="24" height="24" /></Link>
-              </div>
-              <span className="w-4 bg-neutral-100"></span>
+            <div
+  className="
+    flex
+    w-fit
+    overflow-hidden
+    bg-[#FFFFFF] 
+  "
+>
+  <span className="w-14 h-14 flex items-center justify-center shadow-xl">
+    <Link to="https://www.linkedin.com/" target="_blank">
+      <img src={linkedinIcon} alt="LinkedIn" className="h-7 w-7" />
+    </Link>
+  </span>
 
-              <div className="w-14 h-14 flex items-center justify-center  ">
-              <Link className="cursor-pointer" to="https://www.instagram.com"><Icon icon="mdi:instagram" width="24" height="24" /></Link>
-              </div>
-               <span className="w-4 bg-neutral-100"></span>
-              <div className="w-14 h-14 flex items-center justify-center">
-                <Link className="cursor-pointer" to="https://www.x.com"><Icon icon="ri:twitter-x-line" width="24" height="24" /></Link>
-              </div>
-               {/* <span className="w-4 bg-neutral-100"></span> */}
-               {/* <div className="w-14 h-14 flex items-center justify-center">
-                
-              </div> */}
-            </div>
+  <span className="w-4 bg-[#F6F8FF]"></span>
+
+  <span className="w-14 h-14 flex items-center justify-center shadow-xl">
+    <Link to="https://www.instagram.com" target="_blank">
+      <img src={instagramIcon} alt="Instagram" className="h-7 w-7" />
+    </Link>
+  </span>
+  <span className="w-4 bg-[#F6F8FF]"></span>
+
+  <span className="w-14 h-14 flex items-center justify-center shadow-xl">
+    <Link to="https://www.x.com" target="_blank">
+      <img src={twitterIcon} alt="Twitter" className="h-7 w-7" />
+    </Link>
+  </span>
+</div>
+
           </div>
         </div>
 
         {/* RIGHT IMAGE */}
         <div className="flex-1 flex justify-center">
           <div className="rounded-xl relative">
-                       <img src="/assets/starframers.svg" alt="" className="absolute -right-4 -top-7 z-10" />
+            <img src="/assets/starframers.svg" alt="" className="absolute -right-4 -top-7 z-10" loading="lazy" />
 
             <img
                 src="/assets/heroImg.svg"
                 alt="CEO"
                 className="w-[260px] md:w-[500px] rounded-xl object-cover"
+                loading="lazy"
               />
           </div>
         </div>

@@ -226,18 +226,21 @@ function Home() {
               <img
                 src="/assets/secondImgHero.png"
                 alt="Nitish Kumar"
-                className="w-[400px] md:w-[500px] object-cover"
+                loading="lazy"
+                    className="w-[550px] md:w-[550px] "
+                srcSet="/assets/secondImgHero.png 400w, /assets/secondImgHero.png 500w"
+                sizes="(max-width: 768px) 400px, 500px"
               />
             </div>
           </div>
 
           {/* RIGHT CONTENT */}
           <div className="text-lg">
-            <p className="text-lg text-gray-400 font-bold tracking-widest mb-8">
+            <p className="text-2xl text-gray-400 font-bold tracking-widest mb-8">
               ABOUT ME
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-5">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-5">
               Hey, I'm Nitish Kumar👋
             </h2>
 
@@ -257,7 +260,7 @@ function Home() {
 
             {/* CTA BUTTON */}
             <Link to="/contact">
-              <button className="bg-blue-600 text-white px-10 py-4 text-lg font-semibold shadow-md hover:bg-blue-700 transition">
+              <button className="bg-[#0033FF] text-white font-medium px-7 py-3 text-lg shadow-md hover:bg-blue-700 transition">
                 Get In Touch
               </button>
             </Link>
@@ -267,7 +270,7 @@ function Home() {
 
       {/* STATS SECTION */}
       <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="max-w-7xl mx-auto px-6 py-15 grid grid-cols-2 md:grid-cols-4 gap-20 text-center">
           <div className="bg-[#F4F6FF] rounded-xl py-8">
             <p className="text-sm text-gray-500 mb-2">YEAR OF EXPERIENCE</p>
             <h3 className="text-6xl font-bold text-black">
@@ -300,7 +303,7 @@ function Home() {
 
       {/* MY EXPERTISE */}
       <section className="bg-white">
-        <div className="max-w-auto mx-5 px-6 py-20">
+        <div className="max-w-auto mx-5 px-6 py-10">
           <p className="text-lg text-gray-400 text-center mb-2">MY SKILLS</p>
 
           <h2 className="text-4xl font-bold text-center mb-12 text-black">
@@ -316,13 +319,15 @@ function Home() {
               <div>
                 <div
                   key={i}
-                  className="min-w-[320px] bg-[#F4F6FF] rounded-xl p-6 border-b-5 border-blue-600  "
+                  className="min-w-[320px] bg-[#F4F6FF] rounded-xl p-6 border-b-5 border-[#0033FF]  "
                 >
-                  <img
+                  <span className="rounded-full "> <img
                     src="/assets/expert.svg"
                     alt=""
-                    className="mb-2 w-[30px] md:w-[30px]"
-                  />
+                    loading="lazy"
+                    className="mb-2 w-[30px] md:w-[30px] "
+                  /> </span>
+                  
 
                   <h3 className="text-xl font-semibold mb-3 text-black">
                     Strategic Leadership
@@ -342,7 +347,7 @@ function Home() {
 
       {/* MY WORKS */}
       <section id="work" className="bg-white">
-        <div className="max-w-auto  px-6 py-20">
+        <div className="max-w-auto  px-6 py-10">
           {/* Heading */}
           <h2 className="text-3xl font-bold text-center mb-2 text-black">
             My Works
@@ -353,13 +358,14 @@ function Home() {
           </p>
 
           {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-lg text-black">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-5xl text-black">
             {[
               {
                 title: "Development",
                 image: "/assets/mywork4.png",
                 link: "/workdetails",
                 hoverText: "MetaView 3D ",
+                
               },
               {
                 title: "Development",
@@ -387,12 +393,15 @@ function Home() {
                 {/* Image Card */}
                 <Link
                   to={item.link}
-                  className="group relative block max-h-full overflow-hidden rounded-lg"
+                  className="group relative block max-h-full overflow-hidden  "
                 >
                   <img
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-500"
+                    loading="lazy"
+                    srcSet={`${item.image} 400w, ${item.image} 600w`}
+                    sizes="(max-width: 768px) 400px, 600px"
                   />
 
                   {/* Hover Overlay */}
@@ -416,8 +425,8 @@ function Home() {
             ))}
           </div>
           <Link to="/work">
-            <button className="bg-blue-600 text-white px-6 py-3 flex items-center gap-3 mx-auto mt-10 hover:bg-blue-700 transition">
-              View Projects{" "}
+            <button className="bg-[#0033FF] text-white px-6 py-3 flex items-center gap-3 mx-auto mt-10 transition">
+              Projects{" "}
               <Icon icon="si:arrow-right-line" width="24" height="24" />
             </button>
           </Link>
@@ -426,7 +435,7 @@ function Home() {
 
       {/* MY EXPERIENCE */}
       <section id="experience" className="bg-white">
-        <div className="max-w-6xl mx-auto px-6 py-16 text-black">
+        <div className="max-w-6xl mx-auto px-6 py-10 text-black">
           {/* Heading */}
           <h2 className="text-3xl font-bold text-center mb-12">
             MY Experience
@@ -478,8 +487,8 @@ function Home() {
       </section>
 
       {/* MY GUIDE / JOURNEY SECTION */}
-      <section id="guide" className="bg-white text-black  ">
-        <div className="max-w-7xl mx-auto px-6 pt-5 pb-20">
+      <section id="guide" className="bg-white text-[#000000]  ">
+        <div className="mx-10 px-6 pb-20">
           {/* Heading */}
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
             Explore My Professional Journey And The <br />
@@ -523,11 +532,12 @@ function Home() {
 
             {/* RIGHT IMAGE */}
             <div className="flex justify-center">
-              <div className="p-10">
+              <div className="p-5">
                 <img
                   src="/assets/secondImgHero.png"
                   alt="Guide"
-                  className="w-[260px] md:w-[700px] rounded-2xl object-cover  -scale-x-100"
+                  className="w-[260px] md:w-[550px] rounded-2xl object-cover  -scale-x-100"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -544,24 +554,24 @@ function Home() {
 
           <div
             ref={row1Ref}
-            className="flex gap-10 overflow-x-auto scrollbar-hide scroll-smooth cursor-grab active:cursor-grabbing mb-10"
+            className="flex gap-10 overflow-x-auto scrollbar-hide scroll-smooth cursor-grab active:cursor-grabbing mb-10 mx-20"
           >
             {[1, 2, 3, 4].map((_, i) => (
-              <div
-                key={`r1-${i}`}
-                className="min-w-[400px] bg-[#F6F8FF] border border-gray-500 rounded-xl p-8 flex flex-col justify-between ml-7"
+               <div
+                key={`r2-${i}`}
+                className="min-w-[400px] bg-[#F6F8FF] border border-gray-500 rounded-xl w-[516px] h-[274px] px-5 py-5 flex flex-col justify-between"
               >
                 <div className="flex gap-2 mb-2 text-yellow-400 text-2xl">
                   ★★★★★
                 </div>
 
-                <p className="text-[#1F2A44] text-[17px] leading-[26px] mb-5">
+                <p className="text-[#1F2A44] text-[17px] leading-[26px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisse varius enim in eros elementum tristique.
                 </p>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-pink-500 overflow-hidden">
+                  <div className="w-14 h-14 rounded-full bg-blue-500 overflow-hidden">
                     <img
                       src="/assets/review.svg"
                       className="w-full h-full object-cover"
@@ -584,13 +594,13 @@ function Home() {
             {[1, 2, 3, 4].map((_, i) => (
               <div
                 key={`r2-${i}`}
-                className="min-w-[400px] bg-[#F6F8FF] border border-gray-500 rounded-xl p-8 flex flex-col justify-between"
+                className="min-w-[400px] bg-[#F6F8FF] border border-gray-500 rounded-xl w-[516px] h-[274px] px-5 py-5 flex flex-col justify-between"
               >
                 <div className="flex gap-2 mb-2 text-yellow-400 text-2xl">
                   ★★★★★
                 </div>
 
-                <p className="text-[#1F2A44] text-[17px] leading-[26px] mb-5">
+                <p className="text-[#1F2A44] text-[17px] leading-[26px] ">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisse varius enim in eros elementum tristique.
                 </p>
@@ -615,12 +625,12 @@ function Home() {
 
       {/* CONTACT */}
       <section id="contact" className="bg-white text-black">
-        <div className="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div className=" mx-15 px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-20">
           {/* LEFT CONTENT */}
           <div>
-            <h2 className="text-4xl font-bold mb-6">Let’s Talk</h2>
+            <h2 className="text-4xl font-medium mb-6">Let’s Talk</h2>
 
-            <p className="text-gray-700 text-lg leading-relaxed mb-8 max-w-md">
+            <p className="text-black text-lg leading-relaxed mb-8 leading-[2]">
               Get in touch for collaborations, business inquiries, or project
               discussions. I’m always open to meaningful conversations that lead
               to impactful results.
@@ -679,7 +689,7 @@ function Home() {
 
             <button
               type="submit"
-              className="bg-blue-600 text-white px-10 py-3 rounded-md hover:bg-blue-700 transition block mx-auto"
+              className="bg-[#0033FF] text-white px-10 py-3 rounded-md transition block mx-auto"
             >
               Send Message
             </button>
