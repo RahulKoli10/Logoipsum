@@ -216,9 +216,9 @@ function Home() {
 
               {/* Bottom Dot */}
               <span className="w-2 h-2 bg-black rounded-full"></span>
-              <div className="mt-20 text-sm text-black tracking-wide rotate-[-90deg] origin-top">
+              <span className="mt-15 text-sm text-black tracking-wide rotate-[-90deg]">
                 My Short Story
-              </div>
+              </span>
             </div>
 
             {/* Blob Background */}

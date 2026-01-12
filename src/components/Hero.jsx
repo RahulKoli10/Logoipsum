@@ -15,7 +15,7 @@ const Hero = () => {
           <p className="text-lg text-black mb-2">Hey, I'm Nitish Kumar</p>
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
-            CEO & Strategic Leader <br />
+            Co-founder <br />
             at <span className="text-blue-600">NovaNectar</span>
           </h1>
 

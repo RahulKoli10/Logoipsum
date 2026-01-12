@@ -6,9 +6,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
-          <h2 className="text-black text-lg font-semibold mb-3">
-            <img src="/assets/frame.png" alt="" className="h-8" />
-          </h2>
+        
+           <Link to="/"><img src="/assets/frame.png" alt="Logo" className="h-8 cursor-pointer mb-3" /></Link>
           <p className="text-sm text-gray-800">
             lum ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.

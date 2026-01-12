@@ -5,7 +5,7 @@ const Navbar = ({ onOpenQuery }) => {
     <nav className="w-full bg-white shadow-md text-black">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/"><img src="/assets/frame.png" alt="Logo" className="h-8" /></Link>
+        <Link to="/"><img src="/assets/frame.png" alt="Logo" className="h-8 cursor-pointer" /></Link>
          
 
         <ul className="hidden md:flex items-center gap-10 text-lg font-medium  ">
