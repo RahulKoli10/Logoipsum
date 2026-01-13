@@ -1,10 +1,1 @@
-- [ ] Adjust hero section: Keep flex-col on mobile, flex-row on md+; adjust margins/paddings (px-4 sm:px-6, mt-6 sm:mt-10, ml-4 sm:ml-10).
-- [ ] Adjust hero title: text-3xl sm:text-4xl lg:text-5xl.
-- [ ] Adjust role/timeline: flex-col on mobile, flex-row on md+; text-xs sm:text-sm.
-- [ ] Adjust description: max-w-sm sm:max-w-md, mr-4 sm:mr-20.
-- [ ] Hero image: Ensure full width.
-- [ ] Overview section: mx-4 sm:mx-8 lg:mx-15; grid-cols-1 on mobile, md:grid-cols-2.
-- [ ] Adjust overview image: w-full max-w-sm sm:max-w-md lg:w-[550px].
-- [ ] Problem/Goals/Challenges/Outcome sections: Similar grid adjustments, responsive text sizes (text-xl sm:text-2xl lg:text-3xl), margins/paddings.
-- [ ] Related Work: Already has responsive grid, adjust padding px-4 sm:px-6.
-- [ ] Ensure images have responsive srcSet and sizes.
+
