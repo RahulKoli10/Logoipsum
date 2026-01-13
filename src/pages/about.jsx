@@ -2,14 +2,14 @@ import { useEffect, useState, useRef } from "react";
 import { Icon } from "@iconify/react";
 import Navbar from "../components/Nav.jsx";
 import QueryModal from "../components/QueryModal.jsx";
-import Footer from "../components/Footer.jsx"; 
+import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
 const About = () => {
   const arrowRef = useRef(null);
   const containerRef = useRef(null);
 
   const expertiseRef = useRef(null);
-  
+
   useEffect(() => {
     let currentRotation = 0;
     let targetRotation = 0;
@@ -42,7 +42,7 @@ const About = () => {
         container.removeEventListener("mouseleave", onLeave);
       };
     };
-     const observer = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           // Start auto-scroll for expertise
@@ -59,7 +59,7 @@ const About = () => {
     if (expertiseRef.current) {
       observer.observe(expertiseRef.current);
     }
-    
+
     const animate = () => {
       // easing (lerp)
       currentRotation += (targetRotation - currentRotation) * 1;
@@ -75,7 +75,7 @@ const About = () => {
       if (!containerRef.current) return;
 
       const rect = containerRef.current.getBoundingClientRect();
-      const triggerPoint = window.innerHeight / 10 * 9; // 90% of viewport height
+      const triggerPoint = (window.innerHeight / 10) * 9; // 90% of viewport height
 
       if (rect.top > triggerPoint) {
         targetRotation = 0;
@@ -93,9 +93,6 @@ const About = () => {
       window.removeEventListener("scroll", handleScroll);
       cancelAnimationFrame(rafId);
     };
-
-    
-
   }, []);
 
   const [openQuery, setOpenQuery] = useState(false);
@@ -106,29 +103,27 @@ const About = () => {
       {openQuery && <QueryModal onClose={() => setOpenQuery(false)} />}
 
       {/* HERO INTRO */}
-      <section className=" mx-auto mt-20 pb-32 text-black">
+      <section className=" mx-auto mt-10 pb-20 text-black">
         <div className="mx-auto max-w-7xl px-5">
-          <h1 className="text-5xl mb-10">About Me</h1>
+          <h1 className="text-5xl mb-5">About Me</h1>
 
-          <p className=" leading-relaxed mb-16">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            rerum fuga odit natus corporis dolor minus mollitia dolorum vero
-            saepe voluptate, veritatis et recusandae molestias molestiae atque
-            culpa officiis ea blanditiis aperiam, aspernatur quaerat qui? Soluta
-            facilis quia est voluptas cum porro, doloremque id ipsa
-            reprehenderit, rerum magnam nemo quae molestias cupiditate
-            necessitatibus reiciendis quas quaerat doloribus! Laborum beatae
-            asperiores magnam, laudantium labore, excepturi voluptate ducimus
-            qui autem facere aut, inventore quasi fugit repudiandae molestias
-            voluptatem! Repellendus tempore tempora velit earum quos . Commodi
-            in magnam enim, voluptatem, iste ducimus sequi dolorum nulla sit
-            placeat earum, aliquam accusamus perspiciatis debitis totam
-            voluptates vitae nam corrupti accusantium a sunt voluptatibus.
-            Quisquam a odit quam tenetur vel tempore aspernatur, aliquam,
-            consequatur numquam, excepturi sapiente corrupti.
+          <p className=" leading-relaxed mb-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            quis odio fermentum, condimentum purus vitae, congue felis. Duis nec
+            efficitur odio, pharetra aliquet lectus. In dapibus, risus vitae
+            volutpat rutrum, nisi nisl maximus nulla, maximus gravida est justo
+            nec risus. Aliquam erat volutpat. Aliquam vitae mollis elit, quis
+            sagittis massa. Aenean non nisi ut erat tincidunt placerat. Ut
+            sagittis enim ut leo hendrerit, id interdum nulla viverra. Praesent
+            vel egestas ligula, non suscipit odio. Sed nec erat ac ante mattis
+            tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Quisque quis odio fermentum, condimentum purus vitae, congue felis.
+            Duis nec efficitur odio, pharetra aliquet lectus. In dapibus, risus
+            vitae volutpat rutrum, nisi nisl maximus nulla, maximus gravida est
+            justo nec risvus.
           </p>
         </div>
-        <div className="w-full overflow-hidden mt-25">
+        <div className="w-full overflow-hidden mt-15">
           <div className="marquee">
             <div className="marquee__group">
               <span>CHIEF EXECUTIVE OFFICER.</span>
@@ -261,7 +256,14 @@ const About = () => {
       {/* MY JOURNEY */}
       <h3 className="text-3xl font-semibold text-center mt-10">My Journey</h3>
       <section className="mx-auto px-20 py-15 grid md:grid-cols-2 gap-20 items-center">
-        <img src="/assets/aboutsection2.png" alt="My Journey" className=" " loading="lazy" srcSet="/assets/aboutsection2.png 606h, /assets/aboutsection2.png 606h" sizes="(max-width: 513px) 400px, 600px" />
+        <img
+          src="/assets/aboutsection2.png"
+          alt="My Journey"
+          className=" "
+          loading="lazy"
+          srcSet="/assets/aboutsection2.png 606h, /assets/aboutsection2.png 606h"
+          sizes="(max-width: 513px) 400px, 600px"
+        />
         <div className="text-lg leading-[1.8]">
           <p className=" mb-4">
             My career began with a simple curiosity: Why do some digital
@@ -338,7 +340,14 @@ const About = () => {
           </p>
         </div>
 
-        <img src="/assets/aboutsection3.png" alt="My Purpose" className="h-auto w-full max-w-[538px]" loading="lazy" srcSet="/assets/aboutsection3.png 400w, /assets/aboutsection3.png 600w" sizes="(max-width: 768px) 400px, 600px" />
+        <img
+          src="/assets/aboutsection3.png"
+          alt="My Purpose"
+          className="h-auto w-full max-w-[538px]"
+          loading="lazy"
+          srcSet="/assets/aboutsection3.png 400w, /assets/aboutsection3.png 600w"
+          sizes="(max-width: 768px) 400px, 600px"
+        />
       </section>
 
       {/* PROVEN IMPACT */}
@@ -368,8 +377,8 @@ const About = () => {
 
       {/* CTA */}
       <section
-        className="relative py-32 bg-cover bg-center flex items-center" 
-        style={{ backgroundImage: `url(/assets/aboutBg.jpg)`, }}
+        className="relative py-32 bg-cover bg-center flex items-center"
+        style={{ backgroundImage: `url(/assets/aboutBg.jpg)` }}
       >
         {/* Dark overlay (ONLY background) */}
         <div className="absolute inset-0 bg-black/50"></div>
@@ -387,7 +396,7 @@ const About = () => {
             built with clarity, purpose, and measurable outcomes. Let’s
             collaborate to convert your goals into breakthrough results.
           </p>
-          
+
           <Link to="/contact">
             <button className="bg-blue-600 px-8 py-3 rounded-md hover:bg-blue-700 transition">
               Let’s Connect
