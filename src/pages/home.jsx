@@ -360,7 +360,7 @@ function Home() {
           </p>
 
           {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-5xl text-black">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-2xl text-black">
             {[
               {
                 title: "Development",
