@@ -31,15 +31,8 @@ const Hero = () => {
               </button>
               </Link>
             </div>
-            <div
-  className="
-    flex
-    w-fit
-    overflow-hidden
-    bg-[#FFFFFF] 
-  "
->
-  <span className="w-14 h-14 flex items-center justify-center shadow-xl">
+       <div className="flex w-fit bg-[#FFFFFF] w-[155px] ">
+  <span className="w-14 h-14 flex items-center justify-center shadow-[2px_2px_4px_rgba(0,0,0,0.15)]">
     <Link to="https://www.linkedin.com/" target="_blank">
       <img src={linkedinIcon} alt="LinkedIn" className="h-7 w-7" />
     </Link>
@@ -47,19 +40,22 @@ const Hero = () => {
 
   <span className="w-4 bg-[#F6F8FF]"></span>
 
-  <span className="w-14 h-14 flex items-center justify-center shadow-xl">
+  <span className="w-14 h-14 flex items-center justify-center shadow-[2px_2px_4px_rgba(0,0,0,0.15)]">
     <Link to="https://www.instagram.com" target="_blank">
       <img src={instagramIcon} alt="Instagram" className="h-7 w-7" />
     </Link>
   </span>
+
   <span className="w-4 bg-[#F6F8FF]"></span>
 
-  <span className="w-14 h-14 flex items-center justify-center shadow-xl">
+  <span className="w-14 h-14 flex items-center justify-center shadow-[2px_2px_4px_rgba(0,0,0,0.15)]">
     <Link to="https://www.x.com" target="_blank">
       <img src={twitterIcon} alt="Twitter" className="h-7 w-7" />
     </Link>
   </span>
 </div>
+
+
 
           </div>
         </div>
