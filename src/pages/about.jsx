@@ -105,7 +105,7 @@ const About = () => {
       {/* HERO INTRO */}
       <section className=" mx-auto mt-10 pb-20 text-black">
         <div className="mx-auto max-w-7xl px-5">
-          <h1 className="text-5xl mb-5">About Me</h1>
+          <h1 className="text-3xl md:text-5xl mb-5">About Me</h1>
 
           <p className=" leading-relaxed mb-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -154,7 +154,7 @@ const About = () => {
       </section>
 
       {/* CEO STORY */}
-      <section className=" mx-auto px-15 py-5 grid md:grid-cols-2 gap-14 items-start">
+      <section className=" mx-auto px-5 md:px-15 py-5 grid md:grid-cols-2 gap-5 md:gap-14 items-start">
         <div className="space-y-6 md:pr-10 text-[18px]">
           <p>
             As a CEO, I lead at the intersection of technology, innovation, and
@@ -254,8 +254,8 @@ const About = () => {
       </section>
 
       {/* MY JOURNEY */}
-      <h3 className="text-3xl font-semibold text-center mt-10">My Journey</h3>
-      <section className="mx-auto px-20 py-15 grid md:grid-cols-2 gap-20 items-center">
+      <h3 className="text-2xl md:text-3xl font-semibold text-center mt-10">My Journey</h3>
+      <section className="mx-auto px-5 md:px-20 py-15 grid md:grid-cols-2 gap-5 md:gap-20 items-center">
         <img
           src="/assets/aboutsection2.png"
           alt="My Journey"
@@ -304,8 +304,8 @@ const About = () => {
       </section>
 
       {/* MY PURPOSE */}
-      <h3 className="text-3xl font-semibold text-center mt-20">My Purpose</h3>
-      <section className="mx-auto px-20 py-15 grid md:grid-cols-2 gap-20 items-center">
+      <h3 className="text-2xl md:text-3xl font-semibold text-center mt-20">My Purpose</h3>
+      <section className="mx-auto px-5 md:px-20 py-15 grid md:grid-cols-2 gap-5 md:gap-20 items-center">
         <div className="text-lg leading-[1.8]">
           <p className="  mb-5">
             I am driven by a desire to solve real problems. Every project I take
@@ -353,17 +353,20 @@ const About = () => {
       {/* PROVEN IMPACT */}
       <section className=" py-10">
         <div className=" mx-auto px-4">
-          <h3 className="text-3xl font-semibold mb-16 text-center">
+          <h3 className="text-2xl md:text-3xl font-semibold mb-16 text-center">
             Proven Impact
           </h3>
 
-          <div className="flex gap-8 overflow-x-auto scrollbar-hide scroll-smooth cursor-grab active:cursor-grabbing ">
+          <div
+            ref={expertiseRef}
+            className="flex gap-8 overflow-x-auto scrollbar-hide scroll-smooth cursor-grab active:cursor-grabbing "
+          >
             {[1, 2, 3, 4, 5, 6].map((_, i) => (
               <div
                 key={i}
                 className=" min-w-[260px] p-6 rounded-xl   bg-[#F6F8FF] flex-shrink-0 "
               >
-                <h4 className="text-3xl font-bold mb-2">300%+</h4>
+                <h4 className="text-2xl md:text-3xl font-bold mb-2">300%+</h4>
                 <p className="text-lg font-semibold mb-4">Business Growth</p>
                 <p className="text-lg text-gray-600 max-w-80">
                   Scaled company operations and revenue through strategic

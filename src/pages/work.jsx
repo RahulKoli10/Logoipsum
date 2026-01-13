@@ -17,7 +17,7 @@ export default function Work() {
       <section id="work" className="bg-white">
         <div className="max-w-auto  px-6 py-10">
           {/* Heading */}
-          <h2 className="text-3xl font-bold text-center mb-2 text-black">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-2 text-black">
             My Works
           </h2>
           <p className="text-black text-center mb-12 text-lg">

@@ -2,31 +2,31 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="font-dm bg-[#F4F6FF] text-gray-500 text-lg">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 ">
+    <footer className="font-dm bg-[#F4F6FF] text-gray-500 text-base sm:text-lg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
         {/* Brand */}
         <div>
           <Link to="/">
             <img
               src="/assets/frame.png"
               alt="Logo"
-              className="h-8 cursor-pointer mb-3"
+              className="h-6 sm:h-8 cursor-pointer mb-3"
               loading="lazy"
             />
           </Link>
-          <p className="text-sm text-gray-800">
+          <p className="text-xs sm:text-sm text-gray-800">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Reprehenderit architecto ipsum exercitationem magnam repellendus
-             
+
           </p>
         </div>
 
         {/* Quick Links */}
-        <div className="ml-20">
-          <h3 className="text-black font-semibold text-[20px] mb-3">
+        <div>
+          <h3 className="text-black font-semibold text-lg sm:text-[20px] mb-3">
             Quick Links
           </h3>
-          <ul className="space-y-2 text-lg">
+          <ul className="space-y-2 text-sm sm:text-lg">
             <li>
               <Link to="/work" className="hover:text-black cursor-pointer">
                 Work
@@ -54,10 +54,10 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="text-black font-semibold text-[20px] mb-3">
-            Quick Links
+          <h3 className="text-black font-semibold text-lg sm:text-[20px] mb-3">
+            Social Links
           </h3>
-          <ul className="space-y-2 ">
+          <ul className="space-y-2 text-sm sm:text-base">
             <li className="hover:text-black cursor-pointer">
               <Link to="https://www.linkedin.com"> Linkedin</Link>
             </li>
@@ -75,18 +75,18 @@ const Footer = () => {
 
         {/* Newsletter */}
         <div>
-          <h3 className="text-black mb-3 font-semibold">Newsletter</h3>
-          <p className="text-sm text-gray-400 mb-4">
+          <h3 className="text-black mb-3 font-semibold text-lg sm:text-xl">Newsletter</h3>
+          <p className="text-xs sm:text-sm text-gray-400 mb-4">
             Join My Newsletter for Meaningful Updates{" "}
           </p>
 
-          <div className="flex ">
+          <div className="flex flex-col sm:flex-row">
             <input
               type="email"
               placeholder="Your email"
-              className="w-[360px] h-[44px] px-10 text-sm text-black outline-none bg-white"
+              className="w-full sm:w-[240px] lg:w-[360px] h-[44px] px-4 sm:px-10 text-sm text-black outline-none bg-white mb-2 sm:mb-0"
             />
-            <button className="bg-[#0033FF] px-4 text-sm text-white  w-[112px] h-[44px]  ">
+            <button className="bg-[#0033FF] px-4 text-sm text-white w-full sm:w-[112px] h-[44px]">
               Subscribe
             </button>
           </div>

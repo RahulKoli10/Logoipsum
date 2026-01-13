@@ -5,8 +5,8 @@ import Navbar from "../components/Nav.jsx";
 import QueryModal from "../components/QueryModal.jsx";
 import Hero from "../components/Hero.jsx";
 import Footer from "../components/Footer.jsx";
-import "../index.css"; 
-
+import "../index.css";  
+import { motion } from "framer-motion";
 function Home() {
   const [openQuery, setOpenQuery] = useState(false);
 
@@ -74,42 +74,44 @@ function Home() {
       ],
     },
     {
-      years: "2+ Years",
-      company: "Creatify Labs",
-      role: "Lead / Senior Product Designer",
-      duration: "2023 - 2025",
-      points: [
-        "Defined Brand Voice And Identity For Startups.",
-        "Delivered High-Impact Brand Campaigns.",
-        "Championed Digital Transformation.",
-        "Designed Presentation Frameworks & Visual Stories.",
-      ],
-    },
-    {
-      years: "2+ Years",
-      company: "VisionCraft Studio",
-      role: "Design Systems Architect",
-      duration: "2021 - 2022",
-      points: [
-        "Defined Brand Voice And Identity For Startups.",
-        "Delivered High-Impact Brand Campaigns.",
-        "Championed Digital Transformation.",
-        "Designed Presentation Frameworks & Visual Stories.",
-      ],
-    },
-    {
-      years: "2+ Years",
-      company: "PixelForge Solutions",
-      role: "Design Systems Architect",
-      duration: "2022 - 2018",
-      points: [
-        "Defined Brand Voice And Identity For Startups.",
-        "Delivered High-Impact Brand Campaigns.",
-        "Championed Digital Transformation.",
-        "Designed Presentation Frameworks & Visual Stories.",
-      ],
-    },
-  ];
+
+    years: "3+ Years",
+    company: "Creatify Labs",
+    role: "Lead / Senior Product Designer",
+    duration: "2025 – Present",
+    points: [
+      "Defined Brand Voice And Identity For Startups.",
+      "Delivered High-Impact Brand Campaigns.",
+      "Championed Digital Transformation.",
+      "Designed Presentation Frameworks & Visual Stories.",
+    ],
+  },
+  {
+    years: "2+ Years",
+    company: "VisionCraft Studio",
+    role: "Design Systems Architect",
+    duration: "2023 – 2025",
+    points: [
+      "Defined Brand Voice And Identity For Startups.",
+      "Delivered High-Impact Brand Campaigns.",
+      "Championed Digital Transformation.",
+      "Designed Presentation Frameworks & Visual Stories.",
+    ],
+  },
+   {
+    years: "2+ Years",
+    company: "PixelForge Solutions",
+    role: "Design Systems Architect",
+    duration: "2023 – 2025",
+    points: [
+      "Defined Brand Voice And Identity For Startups.",
+      "Delivered High-Impact Brand Campaigns.",
+      "Championed Digital Transformation.",
+      "Designed Presentation Frameworks & Visual Stories.",
+    ],
+  },
+];
+
 
   const row1Ref = useRef(null);
   const row2Ref = useRef(null);
@@ -207,16 +209,16 @@ function Home() {
           {/* LEFT IMAGE + BLOB */}
           <div className="relative flex justify-center">
             {/* Vertical Line + Text */}
-            <div className="absolute left-[-60px] top-0 h-full flex flex-col items-center justify-between">
+            <div className="absolute -left-15 top-0 h-full flex flex-col items-center justify-between">
               {/* Top Dot */}
               <span className="w-2 h-2 bg-black rounded-full"></span>
 
               {/* Line */}
-              <span className="w-[1px] flex-1 bg-black"></span>
+              <span className="w-px flex-1 bg-black"></span>
 
               {/* Bottom Dot */}
               <span className="w-2 h-2 bg-black rounded-full"></span>
-              <span className="mt-15 text-sm text-black tracking-wide rotate-[-90deg]">
+              <span className="mt-15 text-sm text-black tracking-wide -rotate-90 ">
                 My Short Story
               </span>
             </div>
@@ -228,19 +230,18 @@ function Home() {
                   src="/assets/secondImgHero.png"
                   alt="Nitish Kumar"
                   loading="lazy"
-                  className="w-[550px] md:w-[550px] "
+                  className="w-full max-w-sm md:max-w-md lg:w-[550px]"
                   srcSet="/assets/secondImgHero.png 400w, /assets/secondImgHero.png 500w"
                   sizes="(max-width: 768px) 400px, 500px"
-                /> 
+                />
             </div>
           </div>
 
           {/* RIGHT CONTENT */}
           <div className="text-lg">
-            <p className="text-2xl text-gray-400 font-bold tracking-widest mb-8">
+            <p className="text-2xl text-gray-400 font-bold tracking-widest my-12">
               ABOUT ME
-            </p>
-
+            </p> 
             <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-5">
               Hey, I'm Nitish Kumar👋
             </h2>
@@ -271,31 +272,31 @@ function Home() {
 
       {/* STATS SECTION */}
       <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-6 py-15 grid grid-cols-2 md:grid-cols-4 gap-20 text-center">
+        <div className="max-w-7xl mx-auto px-6 py-15 grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-20 text-center">
           <div className="bg-[#F4F6FF] rounded-xl py-8">
             <p className="text-sm text-gray-500 mb-2">YEAR OF EXPERIENCE</p>
-            <h3 className="text-6xl font-bold text-black">
+            <h3 className="text-3xl md:text-6xl font-bold text-black">
               <Counter target={4} />
             </h3>
           </div>
 
           <div className="bg-[#F4F6FF] rounded-xl py-8">
             <p className="text-sm text-gray-500 mb-2">PROJECTS FOUNDED</p>
-            <h3 className="text-6xl font-bold  text-black">
+            <h3 className="text-3xl md:text-6xl font-bold  text-black">
               <Counter target={30} />
             </h3>
           </div>
 
           <div className="bg-[#F4F6FF] rounded-xl py-8">
             <p className="text-sm text-gray-500 mb-2">INDUSTRIES SERVED</p>
-            <h3 className="text-6xl font-bold  text-black">
+            <h3 className="text-3xl md:text-6xl font-bold  text-black">
               <Counter target={5} />
             </h3>
           </div>
 
           <div className="bg-[#F4F6FF] rounded-xl py-8">
             <p className="text-sm text-gray-500 mb-2">TEAMS LED</p>
-            <h3 className="text-6xl font-bold text-black">
+            <h3 className="text-3xl md:text-6xl font-bold text-black">
               <Counter target={50} />
             </h3>
           </div>
@@ -304,10 +305,10 @@ function Home() {
 
       {/* MY EXPERTISE */}
       <section className="bg-white">
-        <div className="max-w-auto mx-5 px-6 py-10">
+        <div className="max-w-auto mx-5 py-10">
           <p className="text-lg text-gray-400 text-center mb-2">MY SKILLS</p>
 
-          <h2 className="text-4xl font-bold text-center mb-12 text-black">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-12 text-black">
             My Expertise
           </h2>
 
@@ -436,73 +437,98 @@ function Home() {
 
       {/* MY EXPERIENCE */}
       <section id="experience" className="bg-white">
-        <div className="max-w-6xl mx-auto px-6 py-10 text-black">
-          {/* Heading */}
-          <h2 className="text-3xl font-bold text-center mb-12">
-            MY Experience
-          </h2>
+      <div className="max-w-6xl mx-auto px-6 py-16 text-black">
+        
+        {/* Heading */}
+        < h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="text-2xl md:text-3xl font-bold text-center mb-12 stickyy"
+        >
+          MY Experience
+        </ h2>
 
-          {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className="pb-8 mb-8 border-b last:border-b-0 last:mb-0"
-            >
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-                {/* LEFT BADGE */}
-                <div className="md:col-span-2 flex items-start">
-                  <span className="inline-flex border px-4 py-1 rounded-full text-sm leading-none">
-                    {exp.years}
-                  </span>
-                </div>
+        {/* Experience List */}
+        {experiences.map((exp, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{
+              duration: 0.6,
+              delay: index * 0.12,
+              ease: "easeOut",
+            }}
+            className="pb-8 mb-8 border-b last:border-be last:mb-0"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 
-                {/* CENTER CONTENT */}
-                <div className="md:col-span-7">
-                  <h3 className="text-2xl font-semibold mb-1">{exp.company}</h3>
-
-                  <p className="mb-4 text-gray-700">{exp.role}</p>
-
-                  <ul className="space-y-3 text-gray-700">
-                    {exp.points.map((point, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        <Icon
-                          icon="bitcoin-icons:verify-filled"
-                          width="25"
-                          height="25"
-                        />
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* RIGHT DATE */}
-                <div className="md:col-span-3 flex md:justify-end items-start gap-2 text-gray-600">
-                  <Icon icon="iconamoon:clock-light" width="20" height="20" />
-                  <span className="text-sm">{exp.duration}</span>
-                </div>
+              {/* LEFT BADGE */}
+              <div className="md:col-span-2 flex items-start">
+                <span className="inline-flex border px-4 py-1 rounded-full text-sm leading-none">
+                  {exp.years}
+                </span>
               </div>
+
+              {/* CENTER CONTENT */}
+              <div className="md:col-span-7">
+                <h3 className="text-xl md:text-2xl font-semibold mb-1">
+                  {exp.company}
+                </h3>
+
+                <p className="mb-4 text-gray-700">{exp.role}</p>
+
+                <ul className="space-y-3 text-gray-700">
+                  {exp.points.map((point, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <Icon
+                        icon="bitcoin-icons:verify-filled"
+                        width="22"
+                        height="22"
+                        className="text-gray-500 mt-0.5"
+                      />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* RIGHT DATE */}
+              <div className="md:col-span-3 flex md:justify-end items-start gap-2 text-gray-600">
+                <Icon
+                  icon="iconamoon:clock-light"
+                  width="20"
+                  height="20"
+                />
+                <span className="text-sm">{exp.duration}</span>
+              </div>
+
             </div>
-          ))}
-          <div className=" border-b border-gray-200 last:border-b-0"> </div>
-        </div>
-      </section>
+          </motion.div>
+        ))}
+
+      </div>
+    </section>
 
       {/* MY GUIDE / JOURNEY SECTION */}
       <section id="guide" className="bg-white text-[#000000]  ">
-        <div className="mx-10 px-6 pb-20">
+        <div className="mx-5 md:mx-10 px-4 md:px-6 pb-10 md:pb-20">
           {/* Heading */}
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+          <h2 className="text-xl md:text-4xl font-bold text-center mb-8 md:mb-12">
             Explore My Professional Journey And The <br />
             Lessons That Guide My Decisions
           </h2>
 
           {/* Content */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
             {/* LEFT TEXT */}
-            <div className="space-y-10">
-              <div className="flex gap-6">
-                <span className="text-3xl font-bold">01</span>
-                <p className="leading-relaxed text-xl">
+            <div className="space-y-6 md:space-y-10">
+              <div className="flex gap-4 md:gap-6">
+                <span className="text-2xl md:text-3xl font-bold">01</span>
+                <p className="leading-relaxed text-lg md:text-xl">
                   At NovaNectar Smart IT Solutions, our vision is to become a
                   trusted growth partner for businesses by delivering
                   innovation, collaboration and support any time it is needed,
@@ -510,18 +536,18 @@ function Home() {
                 </p>
               </div>
 
-              <div className="flex gap-6">
-                <span className="text-3xl font-bold">02</span>
-                <p className="leading-relaxed text-xl">
+              <div className="flex gap-4 md:gap-6">
+                <span className="text-2xl md:text-3xl font-bold">02</span>
+                <p className="leading-relaxed text-lg md:text-xl">
                   We aim to be more than just a service provider and want to
                   grow alongside our clients by offering smart IT solutions,
                   creative thinking and dependable teamwork.
                 </p>
               </div>
 
-              <div className="flex gap-6">
-                <span className="text-3xl font-bold">03</span>
-                <p className="leading-relaxed text-xl">
+              <div className="flex gap-4 md:gap-6">
+                <span className="text-2xl md:text-3xl font-bold">03</span>
+                <p className="leading-relaxed text-lg md:text-xl">
                   Whether you are a startup or expanding firm, we are confident
                   in offering quality and simple digital services that yield
                   results. We are dedicated to listening, evolving and being
@@ -533,7 +559,7 @@ function Home() {
 
             {/* RIGHT IMAGE */}
             <div className="flex justify-center">
-              <div className="p-5">
+              <div className="p-3 md:p-5">
                 <img
                   src="/assets/secondImgHero.png"
                   alt="Guide"
@@ -555,12 +581,16 @@ function Home() {
 
           <div
             ref={row1Ref}
-            className="flex gap-10 overflow-x-auto scrollbar-hide scroll-smooth cursor-grab active:cursor-grabbing mb-10 mx-20"
+            className="flex gap-5 md:gap-10 overflow-x-auto scrollbar-hide scroll-smooth cursor-grab active:cursor-grabbing mb-10 mx-5 md:mx-20"
+            style={{
+              display: 'flex',
+              animation: 'scroll 40s linear infinite'
+            }}
           >
-            {[1, 2, 3, 4].map((_, i) => (
+            {[1, 2, 3, 4, 1, 2, 3, 4].map((_, i) => (
                <div
-                key={`r2-${i}`}
-                className="min-w-[400px] bg-[#F6F8FF] border border-gray-500 rounded-xl w-[516px] h-[274px] px-5 py-5 flex flex-col justify-between"
+                key={`r1-${i}`}
+                className="min-w-[300px] md:min-w-[400px] bg-[#F6F8FF] border border-gray-500 rounded-xl w-[300px] md:w-[516px] h-[274px] px-5 py-5 flex flex-col justify-between"
               >
                 <div className="flex gap-2 mb-2 text-yellow-400 text-2xl">
                   ★★★★★
@@ -591,12 +621,16 @@ function Home() {
           {/* ROW 2 */}
           <div
             ref={row2Ref}
-            className="flex gap-10 overflow-x-auto scrollbar-hide scroll-smooth cursor-grab active:cursor-grabbing ml-12"
+            className="flex gap-5 md:gap-10 overflow-x-auto scrollbar-hide scroll-smooth cursor-grab active:cursor-grabbing ml-5 md:ml-12"
+            style={{
+              display: 'flex',
+              animation: 'scroll-reverse 45s linear infinite'
+            }}
           >
-            {[1, 2, 3, 4].map((_, i) => (
+            {[1, 2, 3, 4, 1, 2, 3, 4].map((_, i) => (
               <div
                 key={`r2-${i}`}
-                className="min-w-[400px] bg-[#F6F8FF] border border-gray-500 rounded-xl w-[516px] h-[274px] px-5 py-5 flex flex-col justify-between"
+                className="min-w-[300px] md:min-w-[400px] bg-[#F6F8FF] border border-gray-500 rounded-xl w-[300px] md:w-[516px] h-[274px] px-5 py-5 flex flex-col justify-between"
               >
                 <div className="flex gap-2 mb-2 text-yellow-400 text-2xl">
                   ★★★★★
