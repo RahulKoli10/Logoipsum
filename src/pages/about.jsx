@@ -159,8 +159,8 @@ const About = () => {
       </section>
 
       {/* CEO STORY */}
-      <section className=" mx-auto px-15 py-10 grid md:grid-cols-2 gap-14 items-start">
-        <div className="space-y-6 leading-relaxed md:pr-10 text-[18px]">
+      <section className=" mx-auto px-15 py-5 grid md:grid-cols-2 gap-14 items-start">
+        <div className="space-y-6 md:pr-10 text-[18px]">
           <p>
             As a CEO, I lead at the intersection of technology, innovation, and
             business strategy. With a background in building AI-powered SaaS
@@ -263,21 +263,21 @@ const About = () => {
       <section className="mx-auto px-20 py-15 grid md:grid-cols-2 gap-20 items-center">
         <img src="/assets/aboutsection2.png" alt="My Journey" className=" " loading="lazy" srcSet="/assets/aboutsection2.png 606h, /assets/aboutsection2.png 606h" sizes="(max-width: 513px) 400px, 600px" />
         <div className="text-lg leading-[1.8]">
-          <p className="leading-relaxed mb-4">
+          <p className=" mb-4">
             My career began with a simple curiosity: Why do some digital
             experiences feel effortless while others frustrate us? This
             curiosity led me into UI/UX, where I found my passion for improving
             the way people interact with technology.
           </p>
 
-          <p className="leading-relaxed mb-4">
+          <p className=" mb-4">
             Over the years, I’ve worked on websites, apps, and dashboards —
             learning what truly matters for users. Today, as a CEO, I combine my
             design mindset with leadership to build products that are not only
             beautiful but genuinely useful.
           </p>
 
-          <p className="leading-relaxed mb-4">
+          <p className=" mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             quis odio fermentum, condimentum purus vitae, congue felis. Duis nec
             efficitur odio, pharetra aliquet lectus. In dapibus, risus vitae
@@ -286,13 +286,13 @@ const About = () => {
             sagittis massa. Aenean non nisi ut erat tincidunt placerat. Ut
             sagittis enim ut leo hendrerit, id interdum nulla viverra.
           </p>
-          <p className="leading-relaxed mb-4">
+          <p className=" mb-4">
             Over the years, I’ve worked on websites, apps, and dashboards —
             learning what truly matters for users. Today, as a CEO, I combine my
             design mindset with leadership to build products that are not only
             beautiful but genuinely useful.
           </p>
-          <p className="leading-relaxed mb-4">
+          <p className="mb-4">
             Over the years, I’ve worked on websites, apps, and dashboards —
             learning what truly matters for users. Today, as a CEO, I combine my
             design mindset with leadership to build products that are not only
@@ -305,14 +305,14 @@ const About = () => {
       <h3 className="text-3xl font-semibold text-center mt-20">My Purpose</h3>
       <section className="mx-auto px-20 py-15 grid md:grid-cols-2 gap-20 items-center">
         <div className="text-lg leading-[1.8]">
-          <p className=" not-only:leading-relaxed mb-5">
+          <p className="  mb-5">
             I am driven by a desire to solve real problems. Every project I take
             on is guided by one question: How can we make this experience better
             for the user? My purpose is to remove complexity, create clarity,
             and design digital products that deliver long-term value.
           </p>
 
-          <p className="leading-relaxed mb-5">
+          <p className=" mb-5">
             My leadership approach combines strategic decision-making with a
             deep understanding of modern engineering. From guiding teams in
             developing Retrieval-Augmented Generation (RAG) systems and
@@ -320,7 +320,7 @@ const About = () => {
             type-safe monorepos.
           </p>
 
-          <p className="leading-relaxed mb-5">
+          <p className="  mb-5">
             Ut in risus venenatis leo molestie elementum. Nullam urna metus,
             gravida sed lacus id, volutpat ullamcorper eros. Suspendisse mattis
             gravida quam a dictum. Orci varius natoque penatibus et magnis dis
@@ -329,7 +329,7 @@ const About = () => {
             gravida et aliquam eget, pretium sit amet purus. Vestibulum
             imperdiet a leo eu fringilla.
           </p>
-          <p className="leading-relaxed">
+          <p className=" ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             quis odio fermentum, condimentum purus vitae, congue felis. Duis nec
             efficitur odio, pharetra aliquet lectus. In dapibus, risus vitae
