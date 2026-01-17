@@ -412,8 +412,7 @@ function Home() {
                       {item.hoverText}{" "}
                       <Icon
                         icon="ri:arrow-right-up-line"
-                        width="40"
-                        height="40"
+                        className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                       />
                       {/* <img
                         src={ArrowhiteWhright}
