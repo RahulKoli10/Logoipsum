@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="font-dm bg-[#F4F6FF] text-gray-500 text-base sm:text-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      <div className="max-w-360 mx-auto px-4 sm:px-6 py-8 sm:py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
         {/* Brand */}
         <div>
           <Link to="/">
@@ -94,18 +94,18 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="max-w-7xl mx-auto px-6 py-6">
-        <div className="flex items-center gap-6">
+      <div className="max-w-360 mx-auto px-4 sm:px-6 py-4 sm:py-6">
+        <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
           {/* Left line */}
-          <div className="flex-1 h-px bg-gray-300"></div>
+          <div className="hidden sm:block flex-1 h-px bg-gray-300"></div>
 
           {/* Text */}
-          <p className="text-sm text-gray-600 whitespace-nowrap">
+          <p className="text-xs sm:text-sm text-gray-600 whitespace-nowrap text-center sm:text-left">
             © 2025 H.A.K GROUP. All rights reserved.
           </p>
 
           {/* Right line */}
-          <div className="flex-1 h-px bg-gray-300"></div>
+          <div className="hidden sm:block flex-1 h-px bg-gray-300"></div>
         </div>
       </div>
     </footer>

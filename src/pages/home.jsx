@@ -5,9 +5,63 @@ import Navbar from "../components/Nav.jsx";
 import QueryModal from "../components/QueryModal.jsx";
 import Hero from "../components/Hero.jsx";
 import Footer from "../components/Footer.jsx";
-import "../index.css";  
+import "../index.css";
 import { motion } from "framer-motion";
 function Home() {
+  // const useAutoScroll = ({ containerRef, sectionRef, speed = 0.4 }) => {
+  //   useEffect(() => {
+  //     const container = containerRef.current;
+  //     const section = sectionRef?.current;
+
+  //     if (!container) return;
+
+  //     let rafId;
+  //     let paused = false;
+
+  //     const onEnter = () => (paused = true);
+  //     const onLeave = () => (paused = false);
+
+  //     container.addEventListener("mouseenter", onEnter);
+  //     container.addEventListener("mouseleave", onLeave);
+  //     container.addEventListener("touchstart", onEnter, { passive: true });
+  //     container.addEventListener("touchend", onLeave, { passive: true });
+
+  //     const animate = () => {
+  //       if (!paused) {
+  //         const maxScroll = container.scrollWidth / 2;
+  //         container.scrollLeft += speed;
+
+  //         if (container.scrollLeft >= maxScroll) {
+  //           container.scrollLeft = 0;
+  //         }
+  //       }
+  //       rafId = requestAnimationFrame(animate);
+  //     };
+
+  //     const observer = new IntersectionObserver(
+  //       ([entry]) => {
+  //         if (entry.isIntersecting) {
+  //           rafId = requestAnimationFrame(animate);
+  //         } else {
+  //           cancelAnimationFrame(rafId);
+  //         }
+  //       },
+  //       { threshold: 0.2 },
+  //     );
+
+  //     if (section) observer.observe(section);
+
+  //     return () => {
+  //       cancelAnimationFrame(rafId);
+  //       observer.disconnect();
+  //       container.removeEventListener("mouseenter", onEnter);
+  //       container.removeEventListener("mouseleave", onLeave);
+  //       container.removeEventListener("touchstart", onEnter);
+  //       container.removeEventListener("touchend", onLeave);
+  //     };
+  //   }, []);
+  // };
+
   const [openQuery, setOpenQuery] = useState(false);
 
   const Counter = ({ target }) => {
@@ -25,7 +79,7 @@ function Home() {
             setHasStarted(false);
           }
         },
-        { threshold: 0.1 }
+        { threshold: 0.1 },
       );
 
       if (counterRef.current) {
@@ -74,47 +128,129 @@ function Home() {
       ],
     },
     {
+      years: "3+ Years",
+      company: "Creatify Labs",
+      role: "Lead / Senior Product Designer",
+      duration: "2025 – Present",
+      points: [
+        "Defined Brand Voice And Identity For Startups.",
+        "Delivered High-Impact Brand Campaigns.",
+        "Championed Digital Transformation.",
+        "Designed Presentation Frameworks & Visual Stories.",
+      ],
+    },
+    {
+      years: "2+ Years",
+      company: "VisionCraft Studio",
+      role: "Design Systems Architect",
+      duration: "2023 – 2025",
+      points: [
+        "Defined Brand Voice And Identity For Startups.",
+        "Delivered High-Impact Brand Campaigns.",
+        "Championed Digital Transformation.",
+        "Designed Presentation Frameworks & Visual Stories.",
+      ],
+    },
+    {
+      years: "2+ Years",
+      company: "PixelForge Solutions",
+      role: "Design Systems Architect",
+      duration: "2023 – 2025",
+      points: [
+        "Defined Brand Voice And Identity For Startups.",
+        "Delivered High-Impact Brand Campaigns.",
+        "Championed Digital Transformation.",
+        "Designed Presentation Frameworks & Visual Stories.",
+      ],
+    },
+  ];
 
-    years: "3+ Years",
-    company: "Creatify Labs",
-    role: "Lead / Senior Product Designer",
-    duration: "2025 – Present",
-    points: [
-      "Defined Brand Voice And Identity For Startups.",
-      "Delivered High-Impact Brand Campaigns.",
-      "Championed Digital Transformation.",
-      "Designed Presentation Frameworks & Visual Stories.",
-    ],
-  },
-  {
-    years: "2+ Years",
-    company: "VisionCraft Studio",
-    role: "Design Systems Architect",
-    duration: "2023 – 2025",
-    points: [
-      "Defined Brand Voice And Identity For Startups.",
-      "Delivered High-Impact Brand Campaigns.",
-      "Championed Digital Transformation.",
-      "Designed Presentation Frameworks & Visual Stories.",
-    ],
-  },
-   {
-    years: "2+ Years",
-    company: "PixelForge Solutions",
-    role: "Design Systems Architect",
-    duration: "2023 – 2025",
-    points: [
-      "Defined Brand Voice And Identity For Startups.",
-      "Delivered High-Impact Brand Campaigns.",
-      "Championed Digital Transformation.",
-      "Designed Presentation Frameworks & Visual Stories.",
-    ],
-  },
-];
+  const expertiseData = [
+    {
+      icon: "/assets/expert.svg",
+      title: "Strategic Leadership",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since tvhe 1500s.",
+    },
+    {
+      icon: "/assets/expert.svg",
+     title: "Strategic Leadership",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since tvhe 1500s.",
+    },
+    {
+      icon: "/assets/expert.svg",
+      title: "Strategic Leadership",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since tvhe 1500s.",
+    },
+    {
+      icon: "/assets/expert.svg",
+     title: "Strategic Leadership",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since tvhe 1500s.",
+    },
+    {
+      icon: "/assets/expert.svg",
+      title: "Strategic Leadership",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since tvhe 1500s.",
+    },
+    {
+      icon: "/assets/expert.svg",
+      title: "Strategic Leadership",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since tvhe 1500s.",
+    },
+    {
+      icon: "/assets/expert.svg",
+      title: "Strategic Leadership",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since tvhe 1500s.",
+    },
+  ];
 
+  const testimonialsData = [
+    {
+      rating: 5,
+      text: "Exceptional work! The design exceeded our expectations and helped boost our user engagement significantly.",
+      avatar: "/assets/review.svg",
+      name: "John Doe",
+      company: "Tech Startup Inc.",
+    },
+    {
+      rating: 5,
+      text: "Professional and creative approach. Delivered on time with outstanding quality.",
+      avatar: "/assets/review.svg",
+      name: "Jane Smith",
+      company: "Digital Agency",
+    },
+    {
+      rating: 4,
+      text: "Great collaboration and innovative solutions. Highly recommend for any design project.",
+      avatar: "/assets/review.svg",
+      name: "Mike Johnson",
+      company: "E-commerce Co.",
+    },
+    {
+      rating: 5,
+      text: "Transformed our brand identity completely. The results speak for themselves.",
+      avatar: "/assets/review.svg",
+      name: "Sarah Wilson",
+      company: "Fashion Brand",
+    },
+    {
+      rating: 5,
+      text: "Outstanding attention to detail and user-centered design approach.",
+      avatar: "/assets/review.svg",
+      name: "David Brown",
+      company: "FinTech Solutions",
+    },
+  ];
 
   const row1Ref = useRef(null);
   const row2Ref = useRef(null);
+  const expertiseSectionRef = useRef(null);
   const expertiseRef = useRef(null);
   const testimonialsRef = useRef(null);
 
@@ -159,11 +295,11 @@ function Home() {
           // The cleanup will handle stopping
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
-    if (expertiseRef.current) {
-      observer.observe(expertiseRef.current);
+    if (expertiseSectionRef.current) {
+      observer.observe(expertiseSectionRef.current);
     }
 
     const testimonialsObserver = new IntersectionObserver(
@@ -176,7 +312,7 @@ function Home() {
           }, 600);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (testimonialsRef.current) {
@@ -188,8 +324,6 @@ function Home() {
       testimonialsObserver.disconnect();
     };
   }, []);
-
-  //EXPERTISE auto scrollable cards logic
 
   return (
     <div className="text-body ">
@@ -205,11 +339,11 @@ function Home() {
 
       {/* ABOUT ME SECTION */}
       <section id="about" className="bg-white">
-        <div className="max-w-auto mx-10 px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
+        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-12 sm:py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           {/* LEFT IMAGE + BLOB */}
           <div className="relative flex justify-center">
             {/* Vertical Line + Text */}
-            <div className="absolute -left-15 top-0 h-full flex flex-col items-center justify-between">
+            <div className="absolute -left-8 sm:-left-12 md:-left-15 top-0 h-full hidden md:flex flex-col items-center justify-between">
               {/* Top Dot */}
               <span className="w-2 h-2 bg-black rounded-full"></span>
 
@@ -224,36 +358,35 @@ function Home() {
             </div>
 
             {/* Blob Background */}
-            <div className="p-10">
-               
-                <img
-                  src="/assets/secondImgHero.png"
-                  alt="Nitish Kumar"
-                  loading="lazy"
-                  className="w-full max-w-sm md:max-w-md lg:w-[550px]"
-                  srcSet="/assets/secondImgHero.png 400w, /assets/secondImgHero.png 500w"
-                  sizes="(max-width: 768px) 400px, 500px"
-                />
+            <div className="p-4 sm:p-6 md:p-10">
+              <img
+                src="/assets/secondImgHero.png"
+                alt="Nitish Kumar"
+                loading="lazy"
+                className="w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg xl:w-[550px]"
+                srcSet="/assets/secondImgHero.png 400w, /assets/secondImgHero.png 500w"
+                sizes="(max-width: 640px) 280px, (max-width: 768px) 400px, (max-width: 1024px) 500px, 550px"
+              />
             </div>
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="text-lg">
-            <p className="text-2xl text-gray-400 font-bold tracking-widest my-12">
+          <div className="text-base sm:text-lg">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-400 font-bold tracking-widest my-6 sm:my-8 md:my-12">
               ABOUT ME
-            </p> 
-            <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-5">
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black mb-4 sm:mb-5">
               Hey, I'm Nitish Kumar👋
             </h2>
 
-            <p className="text-black leading-relaxed mb-5">
+            <p className="text-black leading-relaxed mb-4 sm:mb-5 text-sm sm:text-base">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
 
-            <p className="text-black leading-relaxed mb-8">
+            <p className="text-black leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
               It has survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged. It was
               popularised in the 1960s with the release of Letraset sheets
@@ -262,7 +395,7 @@ function Home() {
 
             {/* CTA BUTTON */}
             <Link to="/contact">
-              <button className="bg-[#0033FF] text-white font-medium px-7 py-3 text-lg shadow-md hover:bg-blue-700 transition">
+              <button className="bg-[#0033FF] text-white font-medium px-6 sm:px-7 py-2.5 sm:py-3 text-base sm:text-lg shadow-md hover:bg-blue-700 transition w-full sm:w-auto">
                 Get In Touch
               </button>
             </Link>
@@ -272,31 +405,37 @@ function Home() {
 
       {/* STATS SECTION */}
       <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-6 py-15 grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-20 text-center">
-          <div className="bg-[#F4F6FF] rounded-xl py-8">
-            <p className="text-sm text-gray-500 mb-2">YEAR OF EXPERIENCE</p>
-            <h3 className="text-3xl md:text-6xl font-bold text-black">
+        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-10 sm:py-12 md:py-15 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-10 xl:gap-20 text-center">
+          <div className="bg-[#F4F6FF] rounded-xl py-6 sm:py-8">
+            <p className="text-xs sm:text-sm text-gray-500 mb-2">
+              YEAR OF EXPERIENCE
+            </p>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-black">
               <Counter target={4} />
             </h3>
           </div>
 
-          <div className="bg-[#F4F6FF] rounded-xl py-8">
-            <p className="text-sm text-gray-500 mb-2">PROJECTS FOUNDED</p>
-            <h3 className="text-3xl md:text-6xl font-bold  text-black">
+          <div className="bg-[#F4F6FF] rounded-xl py-6 sm:py-8">
+            <p className="text-xs sm:text-sm text-gray-500 mb-2">
+              PROJECTS FOUNDED
+            </p>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold  text-black">
               <Counter target={30} />
             </h3>
           </div>
 
-          <div className="bg-[#F4F6FF] rounded-xl py-8">
-            <p className="text-sm text-gray-500 mb-2">INDUSTRIES SERVED</p>
-            <h3 className="text-3xl md:text-6xl font-bold  text-black">
+          <div className="bg-[#F4F6FF] rounded-xl py-6 sm:py-8">
+            <p className="text-xs sm:text-sm text-gray-500 mb-2">
+              INDUSTRIES SERVED
+            </p>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold  text-black">
               <Counter target={5} />
             </h3>
           </div>
 
-          <div className="bg-[#F4F6FF] rounded-xl py-8">
-            <p className="text-sm text-gray-500 mb-2">TEAMS LED</p>
-            <h3 className="text-3xl md:text-6xl font-bold text-black">
+          <div className="bg-[#F4F6FF] rounded-xl py-6 sm:py-8">
+            <p className="text-xs sm:text-sm text-gray-500 mb-2">TEAMS LED</p>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-black">
               <Counter target={50} />
             </h3>
           </div>
@@ -304,41 +443,37 @@ function Home() {
       </section>
 
       {/* MY EXPERTISE */}
-      <section className="bg-white">
-        <div className="max-w-auto mx-5 py-10">
-          <p className="text-lg text-gray-400 text-center mb-2">MY SKILLS</p>
+      {/* ================= MY EXPERTISE ================= */}
+      <section ref={expertiseSectionRef} className="bg-white">
+        <div className="max-w-360 mx-auto px-6 py-20">
+          <p className="text-gray-400 text-center uppercase tracking-wider mb-2">
+            MY SKILLS
+          </p>
 
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-12 text-black">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-14 text-black">
             My Expertise
           </h2>
 
-          {/* Scrollable cards */}
-          <div
-            ref={expertiseRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 scroll-smooth"
-          >
-            {[1, 2, 3, 4, 5, 6].map((_, i) => (
-              <div>
-                <div
-                  key={i}
-                  className="min-w-[320px] bg-[#F4F6FF] rounded-xl p-6 border-b-5 border-[#0033FF]  "
-                >
-                  <span className="rounded-full "> <img
-                    src="/assets/expert.svg"
-                    alt=""
+          <div ref={expertiseRef} className="flex gap-6 overflow-x-hidden">
+            {[...expertiseData, ...expertiseData].map((item, i) => (
+              <div
+                key={i}
+                className="  min-w-[320px] sm:min-w-[320px] md:min-w-[420px] lg:min-w-[320px]"
+              >
+                <div className="bg-[#F4F6FF] rounded-xl p-6 border-b-4 border-[#0033FF] ">
+                  <img
+                    src={item.icon}
+                    alt={item.title}
+                    className="w-8 mb-4"
                     loading="lazy"
-                    className="mb-2 w-[30px] md:w-[30px] "
-                  /> </span>
-                  
+                  />
 
                   <h3 className="text-xl font-semibold mb-3 text-black">
-                    Strategic Leadership
+                    {item.title}
                   </h3>
 
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s.
+                  <p className="text-gray-600 leading-relaxed">
+                    {item.description}
                   </p>
                 </div>
               </div>
@@ -349,25 +484,24 @@ function Home() {
 
       {/* MY WORKS */}
       <section id="work" className="bg-white">
-        <div className="max-w-auto  px-6 py-10">
+        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-8 sm:py-10">
           {/* Heading */}
-          <h2 className="text-3xl font-bold text-center mb-2 text-black ">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-2 text-black">
             My Works
           </h2>
-          <p className="text-black text-center mb-12 text-lg">
+          <p className="text-black text-center mb-8 sm:mb-10 md:mb-12 text-base sm:text-lg px-4">
             Discover My Latest Work And Strategic Solutions That Shape Business
             Growth
           </p>
 
           {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-2xl text-black">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 text-base sm:text-xl md:text-2xl text-black">
             {[
               {
                 title: "Development",
                 image: "/assets/mywork4.png",
                 link: "/workdetails",
                 hoverText: "MetaView 3D ",
-                
               },
               {
                 title: "Development",
@@ -395,20 +529,18 @@ function Home() {
                 {/* Image Card */}
                 <Link
                   to={item.link}
-                  className="group relative block max-h-full overflow-hidden  "
+                  className="group relative block w-full max-w-full md:w-[644px] md:h-[666px] overflow-hidden mx-auto md:mx-0"
                 >
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-500"
+                    className="w-full h-full md:w-[644px] md:h-[666px] object-cover duration-500  "
                     loading="lazy"
-                    srcSet={`${item.image} 400w, ${item.image} 600w`}
-                    sizes="(max-width: 768px) 400px, 600px"
                   />
 
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                    <span className="flex items-center gap-3 text-white text-4xl ">
+                    <span className="flex items-center gap-2 sm:gap-3 text-white text-2xl sm:text-3xl md:text-4xl px-4 text-center">
                       {item.hoverText}{" "}
                       <Icon
                         icon="ri:arrow-right-up-line"
@@ -425,10 +557,13 @@ function Home() {
               </div>
             ))}
           </div>
-          <Link to="/work">
-            <button className="bg-[#0033FF] text-white px-6 py-3 flex items-center gap-3 mx-auto mt-10 transition">
+          <Link to="/work" className="flex justify-center mt-8 sm:mt-10">
+            <button className="bg-[#0033FF] text-white px-6 py-2.5 sm:py-3 flex items-center gap-2 sm:gap-3 mx-auto transition text-base sm:text-lg">
               Projects{" "}
-              <Icon icon="si:arrow-right-line" width="24" height="24" />
+              <Icon
+                icon="si:arrow-right-line"
+                className="w-5 h-5 sm:w-6 sm:h-6"
+              />
             </button>
           </Link>
         </div>
@@ -436,98 +571,96 @@ function Home() {
 
       {/* MY EXPERIENCE */}
       <section id="experience" className="bg-white">
-      <div className="max-w-6xl mx-auto px-6 py-16 text-black">
-        
-        {/* Heading */}
-        < h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="text-2xl md:text-3xl font-bold text-center mb-12 stickyy"
-        >
-          MY Experience
-        </ h2>
-
-        {/* Experience List */}
-        {experiences.map((exp, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
+        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 md:py-16 text-black">
+          {/* Heading */}
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{
-              duration: 0.6,
-              delay: index * 0.12,
-              ease: "easeOut",
-            }}
-            className="pb-8 mb-8 border-b last:border-be last:mb-0"
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="text-2xl sm:text-3xl md:text-3xl font-bold text-center mb-8 sm:mb-10 md:mb-12"
           >
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+            MY Experience
+          </motion.h2>
 
-              {/* LEFT BADGE */}
-              <div className="md:col-span-2 flex items-start">
-                <span className="inline-flex border px-4 py-1 rounded-full text-sm leading-none">
-                  {exp.years}
-                </span>
+          {/* Experience List */}
+          {experiences.map((exp, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.12,
+                ease: "easeOut",
+              }}
+              className="pb-6 sm:pb-8 mb-6 sm:mb-8 border-b last:border-b last:mb-0"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 md:gap-8">
+                {/* LEFT BADGE */}
+                <div className="md:col-span-2 flex items-start">
+                  <span className="inline-flex border px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm leading-none">
+                    {exp.years}
+                  </span>
+                </div>
+
+                {/* CENTER CONTENT */}
+                <div className="md:col-span-7">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-1">
+                    {exp.company}
+                  </h3>
+
+                  <p className="mb-3 sm:mb-4 text-gray-700 text-sm sm:text-base">
+                    {exp.role}
+                  </p>
+
+                  <ul className="space-y-2 sm:space-y-3 text-gray-700">
+                    {exp.points.map((point, i) => (
+                      <li key={i} className="flex items-start gap-2 sm:gap-3">
+                        <Icon
+                          icon="bitcoin-icons:verify-filled"
+                          className="w-5 h-5 sm:w-[22px] sm:h-[22px] text-gray-500 mt-0.5 shrink-0"
+                        />
+                        <span className="text-sm sm:text-base">{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* RIGHT DATE */}
+                <div className="md:col-span-3 flex md:justify-end items-start gap-2 text-gray-600">
+                  <Icon
+                    icon="iconamoon:clock-light"
+                    className="w-4 h-4 sm:w-5 sm:h-5"
+                  />
+                  <span className="text-xs sm:text-sm">{exp.duration}</span>
+                </div>
               </div>
-
-              {/* CENTER CONTENT */}
-              <div className="md:col-span-7">
-                <h3 className="text-xl md:text-2xl font-semibold mb-1">
-                  {exp.company}
-                </h3>
-
-                <p className="mb-4 text-gray-700">{exp.role}</p>
-
-                <ul className="space-y-3 text-gray-700">
-                  {exp.points.map((point, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <Icon
-                        icon="bitcoin-icons:verify-filled"
-                        width="22"
-                        height="22"
-                        className="text-gray-500 mt-0.5"
-                      />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* RIGHT DATE */}
-              <div className="md:col-span-3 flex md:justify-end items-start gap-2 text-gray-600">
-                <Icon
-                  icon="iconamoon:clock-light"
-                  width="20"
-                  height="20"
-                />
-                <span className="text-sm">{exp.duration}</span>
-              </div>
-
-            </div>
-          </motion.div>
-        ))}
-
-      </div>
-    </section>
+            </motion.div>
+          ))}
+        </div>
+      </section>
 
       {/* MY GUIDE / JOURNEY SECTION */}
-      <section id="guide" className="bg-white text-[#000000]  ">
-        <div className="mx-5 md:mx-10 px-4 md:px-6 pb-10 md:pb-20">
+      <section id="guide" className="bg-white text-[#000000]">
+        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 pb-10 sm:pb-12 md:pb-20">
           {/* Heading */}
-          <h2 className="text-xl md:text-4xl font-bold text-center mb-8 md:mb-12">
-            Explore My Professional Journey And The <br />
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-12 px-4">
+            Explore My Professional Journey And The{" "}
+            <br className="hidden md:block" />
             Lessons That Guide My Decisions
           </h2>
 
           {/* Content */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 lg:gap-16 items-center">
             {/* LEFT TEXT */}
-            <div className="space-y-6 md:space-y-10">
-              <div className="flex gap-4 md:gap-6">
-                <span className="text-2xl md:text-3xl font-bold">01</span>
-                <p className="leading-relaxed text-lg md:text-xl">
+            <div className="space-y-6 sm:space-y-8 md:space-y-10">
+              <div className="flex gap-3 sm:gap-4 md:gap-6">
+                <span className="text-xl sm:text-2xl md:text-3xl font-bold shrink-0">
+                  01
+                </span>
+                <p className="leading-relaxed text-base sm:text-lg md:text-xl">
                   At NovaNectar Smart IT Solutions, our vision is to become a
                   trusted growth partner for businesses by delivering
                   innovation, collaboration and support any time it is needed,
@@ -535,18 +668,22 @@ function Home() {
                 </p>
               </div>
 
-              <div className="flex gap-4 md:gap-6">
-                <span className="text-2xl md:text-3xl font-bold">02</span>
-                <p className="leading-relaxed text-lg md:text-xl">
+              <div className="flex gap-3 sm:gap-4 md:gap-6">
+                <span className="text-xl sm:text-2xl md:text-3xl font-bold shrink-0">
+                  02
+                </span>
+                <p className="leading-relaxed text-base sm:text-lg md:text-xl">
                   We aim to be more than just a service provider and want to
                   grow alongside our clients by offering smart IT solutions,
                   creative thinking and dependable teamwork.
                 </p>
               </div>
 
-              <div className="flex gap-4 md:gap-6">
-                <span className="text-2xl md:text-3xl font-bold">03</span>
-                <p className="leading-relaxed text-lg md:text-xl">
+              <div className="flex gap-3 sm:gap-4 md:gap-6">
+                <span className="text-xl sm:text-2xl md:text-3xl font-bold shrink-0">
+                  03
+                </span>
+                <p className="leading-relaxed text-base sm:text-lg md:text-xl">
                   Whether you are a startup or expanding firm, we are confident
                   in offering quality and simple digital services that yield
                   results. We are dedicated to listening, evolving and being
@@ -558,11 +695,11 @@ function Home() {
 
             {/* RIGHT IMAGE */}
             <div className="flex justify-center">
-              <div className="p-3 md:p-5">
+              <div className="p-3 sm:p-4 md:p-5">
                 <img
                   src="/assets/secondImgHero.png"
                   alt="Guide"
-                  className="w-[260px] md:w-[550px] rounded-2xl object-cover  -scale-x-100"
+                  className="w-full max-w-[260px] sm:max-w-sm md:max-w-md lg:w-[550px] rounded-2xl object-cover -scale-x-100"
                   loading="lazy"
                 />
               </div>
@@ -572,84 +709,73 @@ function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section ref={testimonialsRef} id="testimonials" className="bg-[#F6F8FF]">
-        <div className=" mx-auto px-6 py-10">
-          <h2 className="text-3xl font-semibold mb-14 text-[#1F2A44]">
+      {/* ================= TESTIMONIALS ================= */}
+      <section ref={testimonialsRef} className="bg-[#F6F8FF] py-20 ">
+        <div className="max-w-360 mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-14 text-[#1F2A44]">
             Customer Testimonials
           </h2>
 
-          <div
-            ref={row1Ref}
-            className="flex gap-5 md:gap-10 overflow-x-auto scrollbar-hide scroll-smooth cursor-grab active:cursor-grabbing mb-10 mx-5 md:mx-20"
-            style={{
-              display: 'flex',
-              animation: 'scroll 40s linear infinite'
-            }}
-          >
-            {[1, 2, 3, 4, 1, 2, 3, 4].map((_, i) => (
-               <div
-                key={`r1-${i}`}
-                className="min-w-[300px] md:min-w-[400px] bg-[#F6F8FF] border border-gray-500 rounded-xl w-[300px] md:w-[516px] h-[274px] px-5 py-5 flex flex-col justify-between"
+          {/* Row 1 */}
+          <div ref={row1Ref} className="flex gap-6 overflow-x-hidden mb-10">
+            {[...testimonialsData, ...testimonialsData].map((t, i) => (
+              <div
+                key={`row1-${i}`}
+                className=" min-w-[280px] sm:min-w-[320px] md:min-w-[520px]"
               >
-                <div className="flex gap-2 mb-2 text-yellow-400 text-2xl">
-                  ★★★★★
-                </div>
+                <div className=" border border-black-1/2 rounded-xl p-8 h-full flex flex-col justify-between">
+                  <div className="text-yellow-400 text-2xl mb-4">
+                    {"★".repeat(t.rating)}
+                  </div>
 
-                <p className="text-[#1F2A44] text-[17px] leading-[26px]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique.
-                </p>
+                  <p className="text-[#1F2A44] leading-relaxed mb-8">
+                    {t.text}
+                  </p>
 
-                <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-blue-500 overflow-hidden">
+                  <div className="flex items-center gap-4">
                     <img
-                      src="/assets/review.svg"
-                      className="w-full h-full object-cover"
+                      src={t.avatar}
+                      alt={t.name}
+                      className="w-12 h-12 rounded-full object-cover"
                       loading="lazy"
                     />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-lg">Kathryn Murphy</p>
-                    <p className="text-sm text-gray-500">McDonald's</p>
+                    <div>
+                      <p className="font-semibold text-[#1F2A44]">{t.name}</p>
+                      <p className="text-sm text-gray-500">{t.company}</p>
+                    </div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* ROW 2 */}
-          <div
-            ref={row2Ref}
-            className="flex gap-5 md:gap-10 overflow-x-auto scrollbar-hide scroll-smooth cursor-grab active:cursor-grabbing ml-5 md:ml-12"
-            style={{
-              display: 'flex',
-              animation: 'scroll-reverse 45s linear infinite'
-            }}
-          >
-            {[1, 2, 3, 4, 1, 2, 3, 4].map((_, i) => (
+          {/* Row 2 */}
+          <div ref={row2Ref} className="flex gap-6 overflow-x-hidden">
+            {[...testimonialsData, ...testimonialsData].map((t, i) => (
               <div
-                key={`r2-${i}`}
-                className="min-w-[300px] md:min-w-[400px] bg-[#F6F8FF] border border-gray-500 rounded-xl w-[300px] md:w-[516px] h-[274px] px-5 py-5 flex flex-col justify-between"
+                key={`row2-${i}`}
+                className=" min-w-[280px] sm:min-w-[320px] md:min-w-[520px]"
               >
-                <div className="flex gap-2 mb-2 text-yellow-400 text-2xl">
-                  ★★★★★
-                </div>
-
-                <p className="text-[#1F2A44] text-[17px] leading-[26px] ">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique.
-                </p>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-blue-500 overflow-hidden">
-                    <img
-                      src="/assets/review.svg"
-                      className="w-full h-full object-cover"
-                    />
+                <div className=" border border-black-1/2 rounded-xl p-8 h-full flex flex-col justify-between">
+                  <div className="text-yellow-400 text-2xl mb-4">
+                    {"★".repeat(t.rating)}
                   </div>
-                  <div>
-                    <p className="font-semibold text-lg">Dianne Russell</p>
-                    <p className="text-sm text-gray-500">Google</p>
+
+                  <p className="text-[#1F2A44] leading-relaxed mb-8">
+                    {t.text}
+                  </p>
+
+                  <div className="flex items-center gap-4">
+                    <img
+                      src={t.avatar}
+                      alt={t.name}
+                      className="w-12 h-12 rounded-full object-cover"
+                      loading="lazy"
+                    />
+                    <div>
+                      <p className="font-semibold text-[#1F2A44]">{t.name}</p>
+                      <p className="text-sm text-gray-500">{t.company}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -660,71 +786,76 @@ function Home() {
 
       {/* CONTACT */}
       <section id="contact" className="bg-white text-black">
-        <div className=" mx-15 px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-12 sm:py-16 md:py-20 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 md:gap-16 lg:gap-20">
           {/* LEFT CONTENT */}
           <div>
-            <h2 className="text-4xl font-medium mb-6">Let’s Talk</h2>
+            <h2 className="text-3xl sm:text-4xl font-medium mb-4 sm:mb-6">
+              Let's Talk
+            </h2>
 
-            <p className="text-black text-lg leading-relaxed mb-8 leading-[2]">
+            <p className="text-black text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
               Get in touch for collaborations, business inquiries, or project
-              discussions. I’m always open to meaningful conversations that lead
+              discussions. I'm always open to meaningful conversations that lead
               to impactful results.
             </p>
 
             {/* Divider */}
-            <div className="w-full h-px bg-gray-300 mb-8"></div>
+            <div className="w-full h-px bg-gray-300 mb-6 sm:mb-8"></div>
 
             {/* Contact Info */}
-            <div className="space-y-3 mb-8">
-              <p className="text-lg">
+            <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
+              <p className="text-base sm:text-lg">
                 <span className="font-semibold">Email:</span>{" "}
                 yourname@example.com
               </p>
-              <p className="text-lg">
+              <p className="text-base sm:text-lg">
                 <span className="font-semibold">Phone:</span> +91 99999 99999
               </p>
             </div>
 
             {/* Social Links */}
             <div>
-              <p className="font-semibold mb-4">Social Links:</p>
-              <div className="flex gap-6 text-2xl">
-                <Icon icon="mdi:linkedin" width="24" height="24" />
-                <Icon icon="proicons:x-twitter" width="24" height="24" />
-                <Icon icon="mdi:instagram" width="24" height="24" />
+              <p className="font-semibold mb-3 sm:mb-4">Social Links:</p>
+              <div className="flex gap-4 sm:gap-6">
+                <Icon icon="mdi:linkedin" className="w-5 h-5 sm:w-6 sm:h-6" />
+                <Icon
+                  icon="proicons:x-twitter"
+                  className="w-5 h-5 sm:w-6 sm:h-6"
+                />
+                <Icon icon="mdi:instagram" className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
             </div>
           </div>
 
           {/* RIGHT FORM */}
-          <form className="w-full max-w-md ml-auto space-y-4">
+          <form className="w-full max-w-md md:ml-auto space-y-3 sm:space-y-4">
             <input
               type="text"
               placeholder="Name"
-              className="w-full bg-gray-100 rounded-md px-2 py-4 outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-gray-100 rounded-md px-3 sm:px-4 py-3 sm:py-4 outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
             />
 
             <input
               type="email"
               placeholder="Email"
-              className="w-full bg-gray-100 rounded-md px-4 py-4 outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-gray-100 rounded-md px-3 sm:px-4 py-3 sm:py-4 outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
             />
 
             <input
               type="text"
               placeholder="Subject"
-              className="w-full bg-gray-100 rounded-md px-4 py-4 outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-gray-100 rounded-md px-3 sm:px-4 py-3 sm:py-4 outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
             />
 
             <textarea
               placeholder="Message"
               rows="6"
-              className="w-full bg-gray-100 rounded-md px-4 py-4 outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+              className="w-full bg-gray-100 rounded-md px-3 sm:px-4 py-3 sm:py-4 outline-none focus:ring-2 focus:ring-blue-500 resize-none text-sm sm:text-base"
             />
 
             <button
               type="submit"
-              className="bg-[#0033FF] text-white px-10 py-3 rounded-md transition block mx-auto"
+              className="bg-[#0033FF] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-md transition w-full sm:w-auto block sm:mx-auto text-sm sm:text-base"
             >
               Send Message
             </button>
