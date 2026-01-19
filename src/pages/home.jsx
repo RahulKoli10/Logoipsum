@@ -174,7 +174,7 @@ function Home() {
     },
     {
       icon: "/assets/expert.svg",
-     title: "Strategic Leadership",
+      title: "Strategic Leadership",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since tvhe 1500s.",
     },
@@ -186,7 +186,7 @@ function Home() {
     },
     {
       icon: "/assets/expert.svg",
-     title: "Strategic Leadership",
+      title: "Strategic Leadership",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since tvhe 1500s.",
     },
@@ -213,35 +213,35 @@ function Home() {
   const testimonialsData = [
     {
       rating: 5,
-      text: "Exceptional work! The design exceeded our expectations and helped boost our user engagement significantly.",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
       avatar: "/assets/review.svg",
       name: "John Doe",
       company: "Tech Startup Inc.",
     },
     {
       rating: 5,
-      text: "Professional and creative approach. Delivered on time with outstanding quality.",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
       avatar: "/assets/review.svg",
       name: "Jane Smith",
       company: "Digital Agency",
     },
     {
       rating: 4,
-      text: "Great collaboration and innovative solutions. Highly recommend for any design project.",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
       avatar: "/assets/review.svg",
       name: "Mike Johnson",
       company: "E-commerce Co.",
     },
     {
       rating: 5,
-      text: "Transformed our brand identity completely. The results speak for themselves.",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
       avatar: "/assets/review.svg",
       name: "Sarah Wilson",
       company: "Fashion Brand",
     },
     {
       rating: 5,
-      text: "Outstanding attention to detail and user-centered design approach.",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
       avatar: "/assets/review.svg",
       name: "David Brown",
       company: "FinTech Solutions",
@@ -339,6 +339,10 @@ function Home() {
 
       {/* ABOUT ME SECTION */}
       <section id="about" className="bg-white">
+        <p className="block md:hidden text-lg sm:text-xl text-gray-400 font-bold tracking-widest my-6 text-center">
+          ABOUT ME
+        </p>
+
         <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-12 sm:py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           {/* LEFT IMAGE + BLOB */}
           <div className="relative flex justify-center">
@@ -371,10 +375,11 @@ function Home() {
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="text-base sm:text-lg">
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-400 font-bold tracking-widest my-6 sm:my-8 md:my-12">
+          <div className="text-base sm:text-lg text-center md:text-left">
+            <p className="hidden md:block text-2xl text-gray-400 font-bold tracking-widest my-12">
               ABOUT ME
             </p>
+
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black mb-4 sm:mb-5">
               Hey, I'm Nitish Kumar👋
             </h2>
@@ -395,8 +400,8 @@ function Home() {
 
             {/* CTA BUTTON */}
             <Link to="/contact">
-              <button className="bg-[#0033FF] text-white font-medium px-6 sm:px-7 py-2.5 sm:py-3 text-base sm:text-lg shadow-md hover:bg-blue-700 transition w-full sm:w-auto">
-                Get In Touch
+              <button className=" bg-[#0033FF] text-white h-[44px] w-[140px] sm:w-[168px] text-sm sm:text-base font-medium hover:bg-blue-700 transition mx-auto sm:mx-0 block ">
+                Get in Touch{" "}
               </button>
             </Link>
           </div>
@@ -442,10 +447,9 @@ function Home() {
         </div>
       </section>
 
-      {/* MY EXPERTISE */}
-      {/* ================= MY EXPERTISE ================= */}
+      {/* my Expertise */}
       <section ref={expertiseSectionRef} className="bg-white">
-        <div className="max-w-360 mx-auto px-6 py-20">
+        <div className="max-w-[1440px] mx-auto px-6 py-20">
           <p className="text-gray-400 text-center uppercase tracking-wider mb-2">
             MY SKILLS
           </p>
@@ -456,11 +460,8 @@ function Home() {
 
           <div ref={expertiseRef} className="flex gap-6 overflow-x-hidden">
             {[...expertiseData, ...expertiseData].map((item, i) => (
-              <div
-                key={i}
-                className="  min-w-[320px] sm:min-w-[320px] md:min-w-[420px] lg:min-w-[320px]"
-              >
-                <div className="bg-[#F4F6FF] rounded-xl p-6 border-b-4 border-[#0033FF] ">
+              <div key={i} className="shrink-0 w-[366px]">
+                <div className="bg-[#F4F6FF] rounded-xl p-6 border-b-4 border-[#0033FF]">
                   <img
                     src={item.icon}
                     alt={item.title}
@@ -571,7 +572,7 @@ function Home() {
 
       {/* MY EXPERIENCE */}
       <section id="experience" className="bg-white">
-        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 md:py-16 text-black">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 md:py-16 text-black">
           {/* Heading */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -595,13 +596,19 @@ function Home() {
                 delay: index * 0.12,
                 ease: "easeOut",
               }}
-              className="pb-6 sm:pb-8 mb-6 sm:mb-8 border-b last:border-b last:mb-0"
+              className="pb-6 sm:pb-8 mb-6 sm:mb-8 border-b last:mb-0"
             >
               <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 md:gap-8">
-                {/* LEFT BADGE */}
-                <div className="md:col-span-2 flex items-start">
+                {/* LEFT BADGE + MOBILE DURATION */}
+                <div className="md:col-span-2 flex items-start justify-between w-full">
                   <span className="inline-flex border px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm leading-none">
                     {exp.years}
+                  </span>
+
+                  {/* Duration – MOBILE ONLY (RIGHT ALIGNED) */}
+                  <span className="md:hidden flex items-center gap-1 text-xs text-gray-500">
+                    <Icon icon="iconamoon:clock-light" className="w-4 h-4" />
+                    {exp.duration}
                   </span>
                 </div>
 
@@ -628,8 +635,8 @@ function Home() {
                   </ul>
                 </div>
 
-                {/* RIGHT DATE */}
-                <div className="md:col-span-3 flex md:justify-end items-start gap-2 text-gray-600">
+                {/* RIGHT DATE — DESKTOP ONLY */}
+                <div className="hidden md:flex md:col-span-3 md:justify-end items-start gap-2 text-gray-600">
                   <Icon
                     icon="iconamoon:clock-light"
                     className="w-4 h-4 sm:w-5 sm:h-5"
@@ -710,79 +717,102 @@ function Home() {
 
       {/* TESTIMONIALS */}
       {/* ================= TESTIMONIALS ================= */}
-      <section ref={testimonialsRef} className="bg-[#F6F8FF] py-20 ">
-        <div className="max-w-360 mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-14 text-[#1F2A44]">
-            Customer Testimonials
-          </h2>
+      <section ref={testimonialsRef} className="bg-[#F6F8FF] py-20">
+  <div className="max-w-[1440px] mx-auto px-6">
+    <h2 className="text-3xl md:text-4xl font-semibold mb-14 text-[#1F2A44]">
+      Customer Testimonials
+    </h2>
 
-          {/* Row 1 */}
-          <div ref={row1Ref} className="flex gap-6 overflow-x-hidden mb-10">
-            {[...testimonialsData, ...testimonialsData].map((t, i) => (
-              <div
-                key={`row1-${i}`}
-                className=" min-w-[280px] sm:min-w-[320px] md:min-w-[520px]"
-              >
-                <div className=" border border-black-1/2 rounded-xl p-8 h-full flex flex-col justify-between">
-                  <div className="text-yellow-400 text-2xl mb-4">
-                    {"★".repeat(t.rating)}
-                  </div>
-
-                  <p className="text-[#1F2A44] leading-relaxed mb-8">
-                    {t.text}
-                  </p>
-
-                  <div className="flex items-center gap-4">
-                    <img
-                      src={t.avatar}
-                      alt={t.name}
-                      className="w-12 h-12 rounded-full object-cover"
-                      loading="lazy"
-                    />
-                    <div>
-                      <p className="font-semibold text-[#1F2A44]">{t.name}</p>
-                      <p className="text-sm text-gray-500">{t.company}</p>
-                    </div>
-                  </div>
-                </div>
+    {/* Row 1 */}
+    <div ref={row1Ref} className="flex gap-6 overflow-x-hidden mb-10">
+      {[...testimonialsData, ...testimonialsData].map((t, i) => (
+        <div
+          key={`row1-${i}`}
+          className="min-w-[280px] sm:min-w-[320px] md:min-w-[420px]"
+        >
+          <div className="border border-black/60 rounded-xl px-5 py-5 h-full flex flex-col ">
+            
+            {/* Top Content */}
+            <div>
+              {/* Stars */}
+              <div className="text-yellow-400 text-lg sm:text-xl mb-2 leading-none">
+                {"★".repeat(t.rating)}
               </div>
-            ))}
-          </div>
 
-          {/* Row 2 */}
-          <div ref={row2Ref} className="flex gap-6 overflow-x-hidden">
-            {[...testimonialsData, ...testimonialsData].map((t, i) => (
-              <div
-                key={`row2-${i}`}
-                className=" min-w-[280px] sm:min-w-[320px] md:min-w-[520px]"
-              >
-                <div className=" border border-black-1/2 rounded-xl p-8 h-full flex flex-col justify-between">
-                  <div className="text-yellow-400 text-2xl mb-4">
-                    {"★".repeat(t.rating)}
-                  </div>
+              {/* Review text */}
+              <p className="text-[#1F2A44] leading-relaxed mb-4 text-sm sm:text-base">
+                {t.text}
+              </p>
+            </div>
 
-                  <p className="text-[#1F2A44] leading-relaxed mb-8">
-                    {t.text}
-                  </p>
-
-                  <div className="flex items-center gap-4">
-                    <img
-                      src={t.avatar}
-                      alt={t.name}
-                      className="w-12 h-12 rounded-full object-cover"
-                      loading="lazy"
-                    />
-                    <div>
-                      <p className="font-semibold text-[#1F2A44]">{t.name}</p>
-                      <p className="text-sm text-gray-500">{t.company}</p>
-                    </div>
-                  </div>
-                </div>
+            {/* User info */}
+            <div className="flex items-center gap-3">
+              <img
+                src={t.avatar}
+                alt={t.name}
+                className="w-10 h-10 rounded-full object-cover"
+                loading="lazy"
+              />
+              <div>
+                <p className="font-semibold text-[#1F2A44] text-sm sm:text-base">
+                  {t.name}
+                </p>
+                <p className="text-xs sm:text-sm text-gray-500">
+                  {t.company}
+                </p>
               </div>
-            ))}
+            </div>
+
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+    {/* Row 2 */}
+    <div ref={row2Ref} className="flex gap-6 overflow-x-hidden">
+      {[...testimonialsData, ...testimonialsData].map((t, i) => (
+        <div
+          key={`row2-${i}`}
+           className="min-w-[280px] sm:min-w-[320px] md:min-w-[420px]"
+        >
+          <div className="border border-black/60 rounded-xl px-5 py-5 h-full flex flex-col ">
+            
+            {/* Top Content */}
+            <div>
+              <div className="text-yellow-400 text-lg sm:text-xl mb-2 leading-none">
+                {"★".repeat(t.rating)}
+              </div>
+
+              <p className="text-[#1F2A44] leading-relaxed mb-4 text-sm sm:text-base">
+                {t.text}
+              </p>
+            </div>
+
+            {/* User info */}
+            <div className="flex items-center gap-3">
+              <img
+                src={t.avatar}
+                alt={t.name}
+                className="w-10 h-10 rounded-full object-cover"
+                loading="lazy"
+              />
+              <div>
+                <p className="font-semibold text-[#1F2A44] text-sm sm:text-base">
+                  {t.name}
+                </p>
+                <p className="text-xs sm:text-sm text-gray-500">
+                  {t.company}
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* CONTACT */}
       <section id="contact" className="bg-white text-black">
@@ -855,9 +885,9 @@ function Home() {
 
             <button
               type="submit"
-              className="bg-[#0033FF] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-md transition w-full sm:w-auto block sm:mx-auto text-sm sm:text-base"
+              className="bg-[#0033FF] text-white h-[44px] w-[140px] sm:w-[168px] text-sm sm:text-base font-medium hover:bg-blue-700 transition mx-auto block "
             >
-              Send Message
+              Get in Touch
             </button>
           </form>
         </div>

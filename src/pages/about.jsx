@@ -104,10 +104,10 @@ const About = () => {
 
       {/* HERO INTRO */}
       <section className="mx-auto mt-6 sm:mt-8 md:mt-10 pb-12 sm:pb-16 md:pb-20 text-black">
-        <div className="mx-auto max-w-360 px-4 sm:px-5 lg:px-6">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-5">About Me</h1>
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 lg:px-6 ">
+          <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-5 ">About Me</h1>
 
-          <p className="text-sm sm:text-base leading-relaxed mb-8 sm:mb-10">
+          <p className="text-sm sm:text-base leading-relaxed mb-8 sm:mb-10   text-center md:text-left" >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             quis odio fermentum, condimentum purus vitae, congue felis. Duis nec
             efficitur odio, pharetra aliquet lectus. In dapibus, risus vitae
@@ -123,7 +123,7 @@ const About = () => {
             justo nec risvus.
           </p>
         </div>
-        <div className="w-full overflow-hidden mt-8 sm:mt-12 md:mt-15 ">
+        <div className="w-full overflow-hidden mt-8 sm:mt-12 md:mt-20 ">
           <div className="marquee ">
             <div className="marquee__group ">
               <span>CHIEF EXECUTIVE OFFICER.</span>
@@ -141,7 +141,7 @@ const About = () => {
 
         <p
           ref={containerRef}
-          className="mt-12 sm:mt-16 md:mt-20 text-xs sm:text-sm text-gray-500 tracking-widest text-center flex justify-center items-center gap-2"
+          className="mt-15 sm:mt-16 md:mt-20 text-xs sm:text-sm text-gray-500 tracking-widest text-center flex justify-center items-center gap-2"
         >
           SCROLL DOWN
           <span
@@ -154,9 +154,9 @@ const About = () => {
       </section>
 
       {/* CEO STORY */}
-      <section className="max-w-360 mx-auto px-4 sm:px-5 md:px-10 lg:px-15 py-8 sm:py-10 md:py-12 grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-14 items-start">
-        <div className="space-y-4 sm:space-y-6 md:pr-6 lg:pr-10 text-sm sm:text-base md:text-[16px] lg:text-[18px]">
-          <p>
+      <section className="max-w-360 mx-auto px-4 sm:px-5 py-8 sm:py-10 md:py-12 grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-14 items-start ">
+        <div className="space-y-4 sm:space-y-6 md:pr-6 lg:pr-10 text-sm sm:text-base md:text-[16px] lg:text-[18px] ">
+          <p className="text-center md:text-left">
             As a CEO, I lead at the intersection of technology, innovation, and
             business strategy. With a background in building AI-powered SaaS
             platforms, 3D virtual experiences, and enterprise-scale digital
@@ -166,14 +166,14 @@ const About = () => {
             solutions that elevate both user experience and business value..
           </p>
 
-          <p>
+          <p className="text-center md:text-left">
             My leadership approach combines strategic decision-making with a
             deep understanding of modern engineering. From guiding teams in
             developing Retrieval-Augmented Generation (RAG) systems and
             optimizing WebGL for immersive 3D environments to architecting
             type-safe monorepos and scalable platform infrastructures,
           </p>
-          <p>
+          <p className="text-center md:text-left">
             What defines my leadership is my ability to oversee the entire
             technology lifecycle: shaping system architecture, directing product
             vision, integrating AI capabilities, and ensuring efficient delivery
@@ -264,7 +264,7 @@ const About = () => {
           srcSet="/assets/aboutsection2.png 400w, /assets/aboutsection2.png 600w"
           sizes="(max-width: 768px) 400px, 600px"
         />
-        <div className="text-sm sm:text-base md:text-lg leading-[1.6] sm:leading-[1.8]">
+        <div className="text-sm sm:text-base md:text-lg leading-[1.6] sm:leading-[1.8] text-center md:text-left">
           <p className=" mb-4">
             My career began with a simple curiosity: Why do some digital
             experiences feel effortless while others frustrate us? This
@@ -306,7 +306,7 @@ const About = () => {
       {/* MY PURPOSE */}
       <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center mt-12 sm:mt-16 md:mt-20 px-4">My Purpose</h3>
       <section className="max-w-360 mx-auto px-4 sm:px-5 md:px-10 lg:px-20 py-10 sm:py-12 md:py-15 grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 lg:gap-20 items-center">
-        <div className="text-sm sm:text-base md:text-lg leading-[1.6] sm:leading-[1.8]">
+        <div className="text-sm sm:text-base md:text-lg leading-[1.6] sm:leading-[1.8] text-center md:text-left">
           <p className="  mb-5">
             I am driven by a desire to solve real problems. Every project I take
             on is guided by one question: How can we make this experience better
@@ -367,7 +367,7 @@ const About = () => {
                 className="min-w-[240px] sm:min-w-[260px] p-4 sm:p-6 rounded-xl bg-[#F6F8FF] flex-shrink-0"
               >
                 <h4 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">300%+</h4>
-                <p className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Business Growth</p>
+                <p className="text-base sm:text-lg sm:mb-4">Business Growth</p>
                 <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-80">
                   Scaled company operations and revenue through strategic
                   decision-making and long-term planning.
@@ -401,7 +401,7 @@ const About = () => {
           </p>
 
           <Link to="/contact">
-            <button className="bg-blue-600 px-6 sm:px-8 py-2.5 sm:py-3 rounded-md hover:bg-blue-700 transition text-sm sm:text-base">
+            <button className="bg-[#0033FF] px-6 sm:px-8 py-2.5 sm:py-3 hover:bg-blue-700 transition text-sm sm:text-base">
               Let's Connect
             </button>
           </Link>

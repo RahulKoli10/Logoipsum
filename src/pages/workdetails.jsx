@@ -61,8 +61,8 @@ const WorkDetail = () => {
           />
         </div>
         <div>
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-3 sm:mb-4">Project Overview</h3>
-          <p className="text-sm sm:text-base leading-relaxed">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-3 sm:mb-4 text-center md:text-left">Project Overview</h3>
+          <p className="text-sm sm:text-base leading-relaxed text-center md:text-left">
             VexLogic AI Assistant is a modern conversational platform designed
             for users who want fast, clean, and distraction-free interactions
             with AI. My goal was to create a UI that feels intelligent,
@@ -74,9 +74,9 @@ const WorkDetail = () => {
       </section>
 
       {/*  PROBLEM STATEMENT  */}
-      <section className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-6 sm:py-8 md:py-10 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 md:gap-20">
+      <section className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-6 sm:py-8 md:py-10 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 md:gap-20 ">
         <div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-3 sm:mb-4">Problem Statement</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-3 sm:mb-4 text-center md:text-left">Problem Statement</h2>
           <p className="mb-4 sm:mb-6 md:mb-10 text-sm sm:text-base">
             Most AI chat interfaces today feel cluttered, unorganized, or slow.
             Users often struggle with:
@@ -105,8 +105,8 @@ const WorkDetail = () => {
           <img src="/assets/overview4.png" alt="Goals" className="w-full h-auto" loading="lazy" />
         </div>
         <div>
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-3 sm:mb-4 md:mb-5">Project Goals</h3>
-          <p className="mb-3 sm:mb-4 md:mb-5 text-sm sm:text-base">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-3 sm:mb-4 md:mb-5 text-center md:text-left">Project Goals</h3>
+          <p className="mb-3 sm:mb-4 md:mb-5 text-sm sm:text-base text-center md:text-left">
             Designing a modern, intuitive, and user-centric AI interface focused
             on clarity, comfort, and seamless interaction.The goal was to create
             a digital environment that reduces cognitive load, enhances
@@ -127,10 +127,10 @@ const WorkDetail = () => {
        {/*   CHALLENGES & SOLUTIONS */}
       <section className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-6 sm:py-8 md:py-10 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 md:gap-20">
         <div>
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold my-4 sm:my-6 md:my-10">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold my-4 sm:my-6 md:my-10 text-center md:text-left">
             Challenges & Solutions
           </h3>
-          <p className="mb-3 sm:mb-4 md:mb-5 text-sm sm:text-base">
+          <p className="mb-3 sm:mb-4 md:mb-5 text-sm sm:text-base text-center md:text-left">
             Throughout the design process, several usability and visual clarity
             issues emerged. The goal was to overcome these challenges with
             simple, thoughtful design decisions that improved readability,
@@ -162,7 +162,7 @@ const WorkDetail = () => {
           <img src="/assets/overview6.png" alt="Results" className="w-full h-auto" loading="lazy" />
         </div>
 
-        <div className="flex justify-end flex-col">
+        <div className="flex justify-end flex-col text-center md:text-left">
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 md:mb-10">Outcome & Results</h3>
 
           <p className="leading-relaxed text-sm sm:text-base">

@@ -42,9 +42,9 @@ const Navbar = ({ onOpenQuery }) => {
         {/* Desktop Send Query */}
         <button
           onClick={onOpenQuery}
-          className="hidden md:flex items-center gap-2 text-base lg:text-lg font-medium underline underline-offset-4 hover:text-black cursor-pointer"
+          className="hidden md:flex items-center gap-2 text-base lg:text-lg font-medium underline underline-offset-2 hover:text-black cursor-pointer"
         >
-          Send Query<Icon icon="oi:arrow-right" className="w-4 h-4 lg:w-5 lg:h-5" />
+          Send Query<Icon icon="oi:arrow-right" className="w-4 h-4 lg:w-5 lg:h-5 pt-1" />
         </button>
 
         {/* Mobile Menu Button */}

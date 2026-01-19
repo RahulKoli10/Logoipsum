@@ -11,13 +11,15 @@ function Contact() {
       <Navbar onOpenQuery={() => setOpenQuery(true)} />
 
       {openQuery && <QueryModal onClose={() => setOpenQuery(false)} />}
-     <section id="contact" className="bg-white text-black mx-auto mt-6 sm:mt-8 md:mt-10 pb-8 sm:pb-10 md:pb-12">
-        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 md:gap-16 lg:gap-20">
+     <section id="contact" className="bg-white text-black">
+        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-12 sm:py-16 md:py-20 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 md:gap-16 lg:gap-20">
           {/* LEFT CONTENT */}
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6">Let's Talk</h2>
+            <h2 className="text-3xl sm:text-4xl font-medium mb-4 sm:mb-6 text-center md:text-left">
+              Let's Talk
+            </h2>
 
-            <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 max-w-md">
+            <p className="text-black text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 text-center md:text-left">
               Get in touch for collaborations, business inquiries, or project
               discussions. I'm always open to meaningful conversations that lead
               to impactful results.
@@ -42,7 +44,10 @@ function Contact() {
               <p className="font-semibold mb-3 sm:mb-4">Social Links:</p>
               <div className="flex gap-4 sm:gap-6">
                 <Icon icon="mdi:linkedin" className="w-5 h-5 sm:w-6 sm:h-6" />
-                <Icon icon="proicons:x-twitter" className="w-5 h-5 sm:w-6 sm:h-6" />
+                <Icon
+                  icon="proicons:x-twitter"
+                  className="w-5 h-5 sm:w-6 sm:h-6"
+                />
                 <Icon icon="mdi:instagram" className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
             </div>
@@ -76,9 +81,9 @@ function Contact() {
 
             <button
               type="submit"
-              className="bg-blue-600 text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-md hover:bg-blue-700 transition w-full sm:w-auto block sm:mx-auto text-sm sm:text-base"
+              className="bg-[#0033FF] text-white h-[44px] w-[140px] sm:w-[168px] text-sm sm:text-base font-medium hover:bg-blue-700 transition mx-auto block "
             >
-              Send Message
+              Get in Touch
             </button>
           </form>
         </div>

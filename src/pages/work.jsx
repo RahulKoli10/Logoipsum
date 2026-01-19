@@ -17,7 +17,7 @@ export default function Work() {
       <section id="work" className="bg-white">
         <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-8 sm:py-10">
           {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center mb-2 text-black">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-2 text-black">
             My Works
           </h2>
           <p className="text-black text-center mb-8 sm:mb-10 md:mb-12 text-base sm:text-lg px-4">
@@ -26,14 +26,13 @@ export default function Work() {
           </p>
 
           {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl text-black">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 text-base sm:text-xl md:text-2xl text-black">
             {[
               {
                 title: "Development",
                 image: "/assets/mywork4.png",
                 link: "/workdetails",
                 hoverText: "MetaView 3D ",
-                
               },
               {
                 title: "Development",
@@ -61,15 +60,13 @@ export default function Work() {
                 {/* Image Card */}
                 <Link
                   to={item.link}
-                  className="group relative block max-h-full overflow-hidden  "
+                  className="group relative block w-full max-w-full md:w-[644px] md:h-[666px] overflow-hidden mx-auto md:mx-0"
                 >
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-500"
+                    className="w-full h-full md:w-[644px] md:h-[666px] object-cover duration-500  "
                     loading="lazy"
-                    srcSet={`${item.image} 400w, ${item.image} 600w`}
-                    sizes="(max-width: 768px) 400px, 600px"
                   />
 
                   {/* Hover Overlay */}
@@ -94,7 +91,10 @@ export default function Work() {
           <Link to="/work" className="flex justify-center mt-8 sm:mt-10">
             <button className="bg-[#0033FF] text-white px-6 py-2.5 sm:py-3 flex items-center gap-2 sm:gap-3 mx-auto transition text-base sm:text-lg">
               Projects{" "}
-              <Icon icon="si:arrow-right-line" className="w-5 h-5 sm:w-6 sm:h-6" />
+              <Icon
+                icon="si:arrow-right-line"
+                className="w-5 h-5 sm:w-6 sm:h-6"
+              />
             </button>
           </Link>
         </div>
