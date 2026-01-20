@@ -25,7 +25,8 @@ const Hero = () => {
           </p>
 
           {/* CTA + SOCIAL */}
-          <div className="mt-6 flex flex-col gap-6 ">
+          <div className="mt-6 flex flex-col gap-6 items-center md:items-start">
+    
             <Link to="/contact">
               <button className="bg-[#0033FF] text-white px-6 sm:px-8 py-2.5 sm:py-3 text-base sm:text-lg hover:bg-blue-700 transition font-medium ">
                 Get in Touch

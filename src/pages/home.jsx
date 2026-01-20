@@ -719,9 +719,12 @@ function Home() {
       {/* ================= TESTIMONIALS ================= */}
       <section ref={testimonialsRef} className="bg-[#F6F8FF] py-20">
   <div className="max-w-[1440px] mx-auto px-6">
-    <h2 className="text-3xl md:text-4xl font-semibold mb-14 text-[#1F2A44]">
-      Customer Testimonials
-    </h2>
+    <h2 className="text-2xl md:text-4xl font-bold mb-5 text-black text-center">
+      What Our Customers Say
+    </h2 >
+    <p className="  mb-10 text-[##282938] text-center">
+      See how businesses are saving time, managing billing faster, and growing with our software through real customer feedback.
+    </p>
 
     {/* Row 1 */}
     <div ref={row1Ref} className="flex gap-6 overflow-x-hidden mb-10">
