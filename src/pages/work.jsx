@@ -52,6 +52,18 @@ export default function Work() {
                 link: "/workdetails",
                 hoverText: "StreamBoard",
               },
+              {
+                title: "Product Strategy",
+                image: "/assets/overview3.png",
+                link: "/workdetails",
+                hoverText: "FinSync",
+              },
+              {
+                title: "Market Positioning",
+                image: "/assets/mywork4.png",
+                link: "/workdetails",
+                hoverText: "MetaView 3D",
+              },
             ].map((item, index) => (
               <div key={index}>
                 {/* Category */}
@@ -71,7 +83,7 @@ export default function Work() {
 
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                    <span className="flex items-center gap-2 sm:gap-3 text-white text-2xl sm:text-3xl md:text-4xl px-4 text-center">
+                    <span className="flex items-center text-white text-3xl sm:text-3xl md:text-5xl px-4 text-center">
                       {item.hoverText}{" "}
                       <Icon
                         icon="ri:arrow-right-up-line"
@@ -88,7 +100,7 @@ export default function Work() {
               </div>
             ))}
           </div>
-          <Link to="/work" className="flex justify-center mt-8 sm:mt-10">
+          {/* <Link to="/work" className="flex justify-center mt-8 sm:mt-10">
             <button className="bg-[#0033FF] text-white px-6 py-2.5 sm:py-3 flex items-center gap-2 sm:gap-3 mx-auto transition text-base sm:text-lg">
               Projects{" "}
               <Icon
@@ -96,7 +108,7 @@ export default function Work() {
                 className="w-5 h-5 sm:w-6 sm:h-6"
               />
             </button>
-          </Link>
+          </Link> */}
         </div>
       </section>
       <Footer/>
