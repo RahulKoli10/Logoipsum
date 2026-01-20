@@ -214,35 +214,35 @@ function Home() {
     {
       rating: 5,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-      avatar: "/assets/review.svg",
+      avatar: "/assets/testimonialReview.png",
       name: "John Doe",
       company: "Tech Startup Inc.",
     },
     {
       rating: 5,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-      avatar: "/assets/review.svg",
+      avatar: "/assets/testimonialReview.png",
       name: "Jane Smith",
       company: "Digital Agency",
     },
     {
       rating: 4,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-      avatar: "/assets/review.svg",
+      avatar: "/assets/testimonialReview.png",
       name: "Mike Johnson",
       company: "E-commerce Co.",
     },
     {
       rating: 5,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-      avatar: "/assets/review.svg",
+      avatar: "/assets/testimonialReview.png",
       name: "Sarah Wilson",
       company: "Fashion Brand",
     },
     {
       rating: 5,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-      avatar: "/assets/review.svg",
+      avatar: "/assets/testimonialReview.png",
       name: "David Brown",
       company: "FinTech Solutions",
     },
@@ -735,8 +735,16 @@ function Home() {
             {/* Top Content */}
             <div>
               {/* Stars */}
-              <div className="text-yellow-400 text-lg sm:text-xl mb-2 leading-none">
-                {"★".repeat(t.rating)}
+              <div className="text-[#FFAE0B] text-lg sm:text-xl mb-2 leading-none ">
+                {Array.from({length: t.rating}, (_, i) => (
+                  <img
+                    key={i}
+                    src="/assets/testimonialStar.png"
+                    alt="star"
+                    className="w-6 h-6  inline p-0.5"
+                    loading="lazy"
+                  />
+                ))}
               </div>
 
               {/* Review text */}
@@ -779,8 +787,16 @@ function Home() {
             
             {/* Top Content */}
             <div>
-              <div className="text-yellow-400 text-lg sm:text-xl mb-2 leading-none">
-                {"★".repeat(t.rating)}
+              <div className="text-[#FFAE0B] text-lg sm:text-xl mb-2 leading-none">
+                {Array.from({length: t.rating}, (_, i) => (
+                  <img
+                    key={i}
+                    src="/assets/testimonialStar.png"
+                    alt="star"
+                    className="w-6 h-6 inline p-0.5"
+                    loading="lazy"
+                  />
+                ))}
               </div>
 
               <p className="text-[#1F2A44] leading-relaxed mb-4 text-sm sm:text-base">

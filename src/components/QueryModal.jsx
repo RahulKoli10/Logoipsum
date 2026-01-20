@@ -21,7 +21,7 @@ const QueryModal = ({ onClose }) => {
           <img src={queryX} alt="Close" className="h-5 w-5" />
         </button>
 
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 pr-8">
+        <h2 className="text-black text-xl sm:text-2xl md:text-3xl font-bold mb-2 pr-8">
           Let's Connect
         </h2>
 
