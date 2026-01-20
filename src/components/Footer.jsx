@@ -102,7 +102,7 @@ const Footer = () => {
         Join my newsletter for meaningful updates and insights.
       </p>
 
-      <div className="flex flex-col sm:flex-row items-center sm:items-stretch gap-2">
+      <div className="flex flex-col sm:flex-row items-center sm:items-stretch  ">
         <input
           type="email"
           placeholder="Your email"
