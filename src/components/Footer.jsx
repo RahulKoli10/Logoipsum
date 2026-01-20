@@ -102,34 +102,39 @@ const Footer = () => {
         Join my newsletter for meaningful updates and insights.
       </p>
 
-      <div className="flex flex-col sm:flex-row items-center sm:items-stretch  ">
-        <input
-          type="email"
-          placeholder="Your email"
-          className="
-            w-[240px] sm:w-full
-            h-[44px]
-            px-4
-            text-sm
-            text-black
-            outline-none
-            bg-white
-            mx-auto sm:mx-0
-          "
-        />
-        <button
-          className="
-            bg-[#0033FF]
-            text-white
-            h-[44px]
-            w-[120px] sm:w-[112px]
-            text-sm
-            mx-auto sm:mx-0
-          "
-        >
-          Subscribe
-        </button>
-      </div>
+      <div className="flex flex-col sm:flex-col md:flex-row items-center md:items-stretch gap-3 md:gap-0">
+  {/* Input */}
+  <input
+    type="email"
+    placeholder="Your email"
+    className="
+      w-[260px] sm:w-[320px] md:w-full
+      h-[44px]
+      px-4
+      text-sm
+      text-black
+      outline-none
+      bg-white 
+      mx-auto md:mx-0
+    "
+  />
+
+  {/* Button */}
+  <button
+    className="
+      bg-[#0033FF]
+      text-white
+      h-[44px]
+      w-[140px] sm:w-[160px] md:w-[112px]
+      text-sm
+      font-medium 
+      mx-auto md:mx-0
+    "
+  >
+    Subscribe
+  </button>
+</div>
+
     </div>
   </div>
 
