@@ -36,11 +36,11 @@ body {
 .marquee__group {
   display: flex;
   white-space: nowrap;
-  animation: marquee-scroll 25s linear infinite;
+  animation: marquee-scroll 35s linear infinite;
 }
 
 .marquee__group1 {
-  animation: marquee-scroll 25s linear infinite;
+  animation: marquee-scroll 35s linear infinite;
 
 }
 .marquee__group span {

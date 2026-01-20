@@ -63,7 +63,7 @@ function Home() {
   // };
 
   const [openQuery, setOpenQuery] = useState(false);
-
+``
   const Counter = ({ target }) => {
     const [count, setCount] = useState(0);
     const [hasStarted, setHasStarted] = useState(false);
@@ -731,9 +731,9 @@ function Home() {
       {[...testimonialsData, ...testimonialsData].map((t, i) => (
         <div
           key={`row1-${i}`}
-          className="min-w-[280px] sm:min-w-[320px] md:min-w-[420px]"
+          className="min-w-[280px] sm:min-w-[320px] md:min-w-[420px] bg-[#FEFEFF] rounded-xl"
         >
-          <div className="border border-black/60 rounded-xl px-5 py-5 h-full flex flex-col ">
+          <div className="border rounded-xl px-5 py-5 h-full flex flex-col  border-gray-400">
             
             {/* Top Content */}
             <div>
@@ -784,9 +784,9 @@ function Home() {
       {[...testimonialsData, ...testimonialsData].map((t, i) => (
         <div
           key={`row2-${i}`}
-           className="min-w-[280px] sm:min-w-[320px] md:min-w-[420px]"
+           className="min-w-[280px] sm:min-w-[320px] md:min-w-[414px] bg-[#FEFEFF] rounded-xl"
         >
-          <div className="border border-black/60 rounded-xl px-5 py-5 h-full flex flex-col ">
+          <div className="border border-gray-400 rounded-xl px-5 py-5 h-full flex flex-col ">
             
             {/* Top Content */}
             <div>

@@ -7,8 +7,8 @@ const Navbar = ({ onOpenQuery }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white shadow-md text-black relative z-50">
-      <nav className="w-full bg-white shadow-md text-black relative z-50">
+    // <nav className="w-full bg-white shadow-md text-black relative z-50">
+      <nav className="w-full bg-white shadow-sm  text-black relative z-50">
         <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between">
           {/* Logo */}
           <Link to="/">
@@ -134,7 +134,7 @@ const Navbar = ({ onOpenQuery }) => {
           </ul>
         </div>
       </nav>
-    </nav>
+    // </nav>
   );
 };
 

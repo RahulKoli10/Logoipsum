@@ -28,18 +28,18 @@ const Footer = () => {
         />
       </Link>
 
-      <p className="text-sm text-gray-800 max-w-sm text-center md:text-left">
+      <p className="text-[16px] text-gray-800 max-w-sm text-center md:text-left">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy.
       </p>
     </div>
 
     {/* Quick Links */}
-    <div className="lg:-pl-20">
+    <div className="lg:pl-15 ">
       <h3 className="text-black font-semibold text-lg mb-2">
         Quick Links
       </h3>
-      <ul className="space-y-2 text-sm">
+      <ul className="space-y-2 text-[16px]">
         <li>
           <Link to="/work" className="hover:text-black">
             Work
@@ -64,11 +64,11 @@ const Footer = () => {
     </div>
 
     {/* Social Links */}
-    <div className="lg:-pr-10">
-      <h3 className="text-black font-semibold text-lg mb-2">
+    <div className="lg:-pr-10 ">
+      <h3 className="text-black font-semibold text-lg mb-2 ">
         Social Links
       </h3>
-      <ul className="space-y-2 text-sm">
+      <ul className="space-y-2 text-[16px]">
         <li>
           <Link to="https://www.linkedin.com" className="hover:text-black">
             LinkedIn
@@ -98,7 +98,7 @@ const Footer = () => {
         Newsletter
       </h3>
 
-      <p className="text-sm text-gray-400 mb-4 max-w-md text-center sm:text-left mx-auto sm:mx-0">
+      <p className="text-[16px] text-gray-400 mb-4 max-w-md text-center sm:text-left mx-auto sm:mx-0">
         Join my newsletter for meaningful updates and insights.
       </p>
 
